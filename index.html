@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Каскелен Бетон: бетон с завода в Каскелене с доставкой | Алматы и область</title>
+<meta name="description" content="Каскелен Бетон: производство и доставка товарного бетона М100–М500, раствора и керамзитобетона. Миксеры 10–12 м³, ГОСТ, документы. Каскелен, Алматы, Алматинская область. WhatsApp +7 775 001 0555.">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!--
+  Kaskelen Beton — single-file landing.
+  Subject: ready-mix concrete plant at the foot of the Zailiysky Alatau; audience: private builders + contractors in Kaskelen/Almaty.
+  Palette (from the logo): cobalt #1E4FD1 · deep navy #0A1730 · concrete #E6E8EB · cement #8A929C · snow #F6F8FB · sun-on-snow #FFC94A (CTA spark only)
+  Type: Unbounded (headlines, heavy, uppercase) · Manrope (text)
+  Signature: the striped blue/white mixer drum, turning in the hero and filling up in the calculator.
+-->
+<style>
+:root{
+  --cobalt:#1E4FD1; --cobalt-2:#2F66F0; --navy:#0A1730; --navy-2:#122447;
+  --concrete:#E6E8EB; --concrete-2:#D5D9DE; --cement:#8A929C; --snow:#F6F8FB; --ink:#17202E; --muted:#5C6675;
+  --sun:#FFC94A; --wa:#1FAF5A;
+  --r:22px; --shadow:0 20px 60px -24px rgba(10,23,48,.35);
+  --ease:cubic-bezier(.2,.8,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;overflow-x:hidden}
+html,body{overflow-x:clip}
+body{font-family:Manrope,system-ui,sans-serif;color:var(--ink);background:var(--snow);font-size:17px;line-height:1.55;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+.wrap{width:min(1240px,100% - 40px);margin-inline:auto}
+h1,h2,h3,.disp{font-family:Unbounded,Manrope,sans-serif;letter-spacing:-.01em;line-height:1.02}
+h2{font-size:clamp(34px,5vw,64px);font-weight:800;text-transform:uppercase}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--cobalt)}
+.eyebrow::before{content:"";width:28px;height:10px;border-radius:3px;background:repeating-linear-gradient(-55deg,var(--cobalt) 0 6px,#fff 6px 10px);box-shadow:0 0 0 1.5px var(--cobalt)}
+.sec{padding:clamp(80px,10vw,140px) 0;position:relative}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:48px;flex-wrap:wrap}
+.sec-head p{max-width:420px;color:var(--muted)}
+/* concrete grain */
+.grain{position:relative}
+.grain::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.35;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .48 0 0 0 0 .52 0 0 0 .22 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:999px;font-weight:800;font-size:16px;transition:transform .35s var(--ease),box-shadow .35s var(--ease),background .25s;white-space:nowrap}
+.btn:hover{transform:translateY(-3px)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 14px 30px -12px rgba(31,175,90,.7)}
+.btn-wa:hover{box-shadow:0 20px 40px -12px rgba(31,175,90,.85)}
+.btn-sun{background:var(--sun);color:var(--navy);box-shadow:0 14px 30px -12px rgba(255,201,74,.7)}
+.btn-ghost{background:rgba(255,255,255,.08);color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.35);backdrop-filter:blur(8px)}
+.btn-ghost:hover{background:rgba(255,255,255,.16)}
+.btn-blue{background:var(--cobalt);color:#fff;box-shadow:0 14px 30px -12px rgba(30,79,209,.7)}
+.btn-line{color:var(--cobalt);box-shadow:inset 0 0 0 1.5px var(--cobalt)}
+.btn-line:hover{background:var(--cobalt);color:#fff}
+
+/* NAV */
+.nav{position:fixed;inset:0 0 auto;z-index:50;transition:background .35s,box-shadow .35s,padding .35s;padding:18px 0}
+.nav.solid{background:rgba(10,23,48,.86);backdrop-filter:blur(14px);box-shadow:0 10px 30px -20px #000;padding:10px 0}
+.nav .wrap{display:flex;align-items:center;gap:28px}
+.brand{display:flex;align-items:center;gap:12px;color:#fff}
+.brand img{width:52px;height:52px;border-radius:50%;filter:drop-shadow(0 6px 14px rgba(0,0,0,.35));transition:transform .6s var(--ease)}
+.brand:hover img{transform:rotate(-12deg) scale(1.06)}
+.brand b{font-family:Unbounded;font-weight:800;font-size:16px;letter-spacing:.02em;line-height:1}
+.brand small{display:block;font-size:12px;letter-spacing:.2em;opacity:.7;margin-top:4px;font-weight:700}
+.links{display:flex;gap:26px;margin-left:auto}
+.links a{color:rgba(255,255,255,.82);font-weight:700;font-size:15px;position:relative;padding:6px 0}
+.links a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--sun);transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease)}
+.links a:hover{color:#fff}.links a:hover::after{transform:scaleX(1)}
+.nav-phone{color:#fff;font-weight:800;font-size:15px;display:flex;align-items:center;gap:8px}
+.nav .btn{padding:12px 20px;font-size:15px}
+.burger{display:none;width:44px;height:44px;border-radius:12px;background:rgba(255,255,255,.1);color:#fff;margin-left:auto}
+.burger span{display:block;width:20px;height:2px;background:#fff;margin:4px auto;transition:.3s}
+
+/* HERO */
+.hero{min-height:100svh;background:radial-gradient(120% 80% at 70% 0%,#2a5bd6 0%,#14306e 38%,var(--navy) 75%);color:#fff;position:relative;overflow:hidden;display:flex;flex-direction:column}
+.hero .stars{position:absolute;inset:0;background-image:radial-gradient(1.5px 1.5px at 20% 30%,#fff8,transparent),radial-gradient(1px 1px at 70% 20%,#fff6,transparent),radial-gradient(1.5px 1.5px at 85% 40%,#fff5,transparent),radial-gradient(1px 1px at 40% 12%,#fff7,transparent);opacity:.6}
+.mtn{position:absolute;left:-5%;right:-5%;bottom:0;width:110%;pointer-events:none;will-change:transform}
+.hero-in{position:relative;z-index:3;flex:1;display:grid;grid-template-columns:1.25fr .9fr;align-items:center;gap:40px;padding-top:120px;padding-bottom:270px}
+.hero h1{font-size:clamp(40px,7vw,100px);font-weight:900;text-transform:uppercase;line-height:.92;letter-spacing:-.02em}
+.hero h1 .ln{display:block;overflow:hidden}
+.hero h1 .ln>span{display:inline-block;transform:translateY(105%);animation:rise 1s var(--ease) forwards}
+.hero h1 .ln:nth-child(2)>span{animation-delay:.12s}.hero h1 .ln:nth-child(3)>span{animation-delay:.24s}
+.hero h1 em{font-style:normal;color:#9fb8ff;font-weight:700}
+.hero h1 .blue{color:var(--sun)}
+@keyframes rise{to{transform:none}}
+.hero p.lead{font-size:clamp(17px,1.5vw,20px);max-width:540px;margin:28px 0 36px;color:rgba(255,255,255,.82);opacity:0;animation:fade 1s .5s forwards}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap;opacity:0;animation:fade 1s .65s forwards}
+@keyframes fade{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.badge-wrap{position:relative;justify-self:center;width:min(440px,90%);aspect-ratio:1;opacity:0;animation:pop 1.2s .3s var(--ease) forwards}
+@keyframes pop{from{opacity:0;transform:scale(.8) rotate(-8deg)}to{opacity:1;transform:none}}
+.badge-wrap img{position:absolute;inset:11%;width:78%;height:78%;object-fit:contain;filter:drop-shadow(0 30px 50px rgba(0,0,0,.5));animation:float 6s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-14px) rotate(1.5deg)}}
+.ring{position:absolute;inset:0;animation:spin 28s linear infinite}
+.ring text{font-family:Unbounded;font-weight:700;font-size:15.5px;letter-spacing:5px;fill:rgba(255,255,255,.75)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.road{position:absolute;left:0;right:0;bottom:0;height:120px;z-index:2;background:linear-gradient(#2b3342,#1b212c)}
+.road::before{content:"";position:absolute;left:0;right:0;top:56px;height:5px;background:repeating-linear-gradient(90deg,rgba(255,255,255,.55) 0 60px,transparent 60px 120px);animation:dash 1.4s linear infinite}
+@keyframes dash{to{background-position:-120px 0}}
+.truck{position:absolute;bottom:62px;z-index:4;width:min(420px,58vw);left:50%;animation:drive 2.6s .2s var(--ease) both}
+@keyframes drive{from{transform:translateX(-150vw)}to{transform:translateX(-50%)}}
+.truck .wheel{transform-box:fill-box;transform-origin:center;animation:spin 0.9s linear infinite}
+.truck .bob{animation:bob .5s ease-in-out infinite alternate}
+@keyframes bob{to{transform:translateY(1.4px)}}
+.drum-stripes{animation:drumroll 2.2s linear infinite}
+@keyframes drumroll{to{transform:translateX(-64px)}}
+.scroll-cue{position:absolute;right:30px;bottom:150px;z-index:3;writing-mode:vertical-rl;font-size:12px;letter-spacing:.3em;font-weight:800;color:rgba(255,255,255,.6);text-transform:uppercase}
+
+/* STATS */
+.stats{background:var(--cobalt);color:#fff;position:relative;z-index:5}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:34px 24px;border-left:1px solid rgba(255,255,255,.18)}
+.stat:first-child{border-left:0}
+.stat b{font-family:Unbounded;font-size:clamp(26px,3vw,40px);font-weight:800;display:block;line-height:1}
+.stat span{font-size:15px;opacity:.85;font-weight:600}
+
+/* MARQUEE */
+.marq{background:var(--navy);color:#fff;overflow:hidden;padding:22px 0;transform:rotate(-1.2deg) scale(1.03);margin:-14px 0 0;position:relative;z-index:4}
+.marq-track{display:flex;gap:48px;width:max-content;animation:marq 32s linear infinite}
+.marq span{font-family:Unbounded;font-weight:800;font-size:clamp(20px,2.4vw,30px);text-transform:uppercase;white-space:nowrap;display:flex;align-items:center;gap:48px}
+.marq span::after{content:"";width:34px;height:14px;border-radius:4px;background:repeating-linear-gradient(-55deg,var(--sun) 0 7px,transparent 7px 12px)}
+@keyframes marq{to{transform:translateX(-50%)}}
+
+/* PRICES */
+.prices{background:var(--concrete)}
+.tabs{display:inline-flex;background:#fff;border-radius:999px;padding:6px;gap:4px;box-shadow:var(--shadow);flex-wrap:wrap}
+.tab{padding:12px 20px;border-radius:999px;font-weight:800;font-size:15px;color:var(--muted);transition:.3s}
+.tab.on{background:var(--navy);color:#fff}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+.pcard{background:#fff;border-radius:var(--r);padding:26px 26px 22px;position:relative;overflow:hidden;transition:transform .45s var(--ease),box-shadow .45s;box-shadow:0 2px 0 rgba(10,23,48,.04)}
+.pcard:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.pcard .g{font-family:Unbounded;font-weight:900;font-size:44px;line-height:1;color:var(--navy)}
+.pcard .cls{display:inline-block;margin-left:8px;font-weight:800;font-size:14px;color:var(--cobalt);background:#E8EEFD;padding:4px 10px;border-radius:999px;vertical-align:middle}
+.pcard p{color:var(--muted);font-size:15px;margin:12px 0 18px;min-height:46px}
+.pcard .pr{display:flex;align-items:end;justify-content:space-between;gap:10px}
+.pcard .pr b{font-family:Unbounded;font-size:24px;font-weight:800;color:var(--ink)}
+.pcard .pr small{display:block;font-size:14px;color:var(--muted);font-weight:600}
+.pcard .order{width:46px;height:46px;border-radius:50%;background:var(--wa);display:grid;place-items:center;color:#fff;transition:transform .35s var(--ease)}
+.pcard .order:hover{transform:scale(1.1) rotate(-8deg)}
+.pcard .order svg{width:22px;height:22px}
+.pcard .bar{position:absolute;left:0;top:0;height:5px;background:var(--cobalt);transition:width 1s var(--ease)}
+.pcard.na{opacity:.5}
+.note{margin-top:26px;font-size:15px;color:var(--muted);display:flex;gap:10px;align-items:flex-start}
+.note b{color:var(--ink)}
+
+/* CALC */
+.calc{background:var(--navy);color:#fff;overflow:hidden}
+.calc h2{color:#fff}
+.calc .sec-head p{color:rgba(255,255,255,.7)}
+.calc-box{display:grid;grid-template-columns:1.1fr .9fr;gap:24px}
+.panel{background:var(--navy-2);border-radius:28px;padding:32px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.06)}
+.shapes{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:26px}
+.shape{padding:16px 10px 14px;border-radius:16px;background:rgba(255,255,255,.04);box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.1);text-align:center;font-weight:700;font-size:14px;color:rgba(255,255,255,.75);transition:.3s}
+.shape svg{width:46px;height:34px;margin:0 auto 8px;display:block}
+.shape.on{background:var(--cobalt);color:#fff;box-shadow:none}
+.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.field label{display:block;font-size:14px;font-weight:700;color:rgba(255,255,255,.65);margin-bottom:6px}
+.field .inp{display:flex;align-items:center;background:rgba(255,255,255,.06);border-radius:14px;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.1);transition:box-shadow .25s}
+.field .inp:focus-within{box-shadow:inset 0 0 0 2px var(--cobalt-2)}
+.field input,.field select{flex:1;min-width:0;background:none;border:0;outline:0;color:#fff;font:700 18px Manrope;padding:14px 16px}
+.field select option{color:#111}
+.field .u{padding-right:16px;color:rgba(255,255,255,.5);font-weight:700;font-size:15px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+.chk{display:flex;align-items:center;gap:10px;margin-top:18px;font-weight:600;color:rgba(255,255,255,.8);cursor:pointer;font-size:15px}
+.chk input{width:20px;height:20px;accent-color:var(--cobalt-2)}
+.result{display:flex;flex-direction:column}
+.drum-vis{position:relative;height:190px;margin:-6px 0 10px}
+.vol{font-family:Unbounded;font-size:clamp(48px,6vw,76px);font-weight:900;line-height:1}
+.vol small{font-size:.4em;opacity:.6;margin-left:6px}
+.trucks{font-weight:700;color:rgba(255,255,255,.7);margin:6px 0 22px;font-size:15px}
+.lines{border-top:1px dashed rgba(255,255,255,.18);padding-top:16px;display:grid;gap:10px;font-size:15px}
+.lines div{display:flex;justify-content:space-between;gap:14px;color:rgba(255,255,255,.75)}
+.lines div b{color:#fff}
+.total{display:flex;justify-content:space-between;align-items:end;margin:18px 0 22px;padding-top:16px;border-top:1px solid rgba(255,255,255,.18)}
+.total span{font-weight:700;color:rgba(255,255,255,.7)}
+.total b{font-family:Unbounded;font-size:clamp(26px,3vw,36px);color:var(--sun)}
+.result .btn{justify-content:center}
+.tiny{font-size:14px;color:rgba(255,255,255,.5);margin-top:12px}
+
+/* GRADES */
+.grades{background:var(--snow)}
+.purpose{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:34px}
+.chip{padding:12px 18px;border-radius:999px;background:#fff;font-weight:700;font-size:15px;box-shadow:inset 0 0 0 1.5px var(--concrete-2);transition:.3s}
+.chip:hover{box-shadow:inset 0 0 0 1.5px var(--cobalt);color:var(--cobalt)}
+.chip.on{background:var(--cobalt);color:#fff;box-shadow:none}
+.scale{display:grid;grid-template-columns:repeat(9,1fr);gap:8px;align-items:end;height:280px;margin-bottom:24px}
+.col{position:relative;border-radius:14px 14px 6px 6px;background:var(--concrete);cursor:pointer;transition:background .35s,transform .35s var(--ease);display:flex;align-items:flex-start;justify-content:center;padding-top:12px}
+.col:hover{transform:translateY(-4px)}
+.col span{font-family:Unbounded;font-weight:800;font-size:clamp(11px,1.2vw,16px);color:var(--muted)}
+.col.on{background:repeating-linear-gradient(-55deg,var(--cobalt) 0 14px,#3d6ff0 14px 22px);}
+.col.on span{color:#fff}
+.col.rec::after{content:"подходит";position:absolute;top:-30px;left:50%;transform:translateX(-50%);font-size:12px;font-weight:800;color:var(--wa);letter-spacing:.06em;white-space:nowrap}
+.gdetail{display:grid;grid-template-columns:auto 1fr auto;gap:36px;align-items:center;background:#fff;border-radius:28px;padding:30px 34px;box-shadow:var(--shadow)}
+.gdetail .big{font-family:Unbounded;font-weight:900;font-size:clamp(54px,7vw,92px);color:var(--cobalt);line-height:.9}
+.gdetail h3{font-size:22px;font-weight:800;margin-bottom:8px}
+.gdetail p{color:var(--muted)}
+.gdetail .meta{display:flex;gap:22px;margin-top:12px;flex-wrap:wrap;font-size:15px}
+.gdetail .meta b{display:block;font-family:Unbounded;font-size:18px}
+.extra{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+.xcard{background:var(--concrete);border-radius:var(--r);padding:26px}
+.xcard h3{font-size:19px;margin-bottom:8px;font-weight:800}
+.xcard p{color:var(--muted);font-size:15px}
+
+/* PHOTOS */
+.fleet{background:var(--navy);color:#fff;overflow:hidden}
+.fleet h2{color:#fff}
+.mosaic{display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:280px 280px;gap:16px}
+.ph{position:relative;border-radius:24px;overflow:hidden;background:linear-gradient(135deg,#1c3366,#0e1b38)}
+.ph img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease),filter .6s;filter:saturate(.9)}
+.ph:hover img{transform:scale(1.07);filter:saturate(1.1)}
+.ph:first-child{grid-row:span 2}
+.ph figcaption{position:absolute;left:16px;bottom:16px;right:16px;padding:12px 16px;border-radius:14px;background:rgba(10,23,48,.65);backdrop-filter:blur(10px);font-weight:700;font-size:15px;transform:translateY(8px);opacity:.92;transition:.4s var(--ease)}
+.ph:hover figcaption{transform:none;opacity:1}
+.ph figcaption b{font-family:Unbounded;display:block;font-size:16px;margin-bottom:2px}
+.ph:nth-child(4){grid-column:span 2}
+
+/* STEPS */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:s;position:relative}
+.step{background:#fff;border-radius:var(--r);padding:28px;position:relative;box-shadow:0 2px 0 rgba(10,23,48,.04);transition:transform .45s var(--ease),box-shadow .45s}
+.step:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.step::before{counter-increment:s;content:counter(s);font-family:Unbounded;font-weight:900;font-size:64px;line-height:1;color:transparent;-webkit-text-stroke:1.5px var(--cobalt);display:block;margin-bottom:18px}
+.step h3{font-size:20px;font-weight:800;margin-bottom:8px}
+.step p{color:var(--muted);font-size:15px}
+
+/* DELIVERY */
+.delivery{background:var(--concrete)}
+.del-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
+.zones{background:var(--navy);color:#fff;border-radius:28px;padding:34px;position:relative;overflow:hidden}
+.zone{display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.12);gap:20px}
+.zone:last-of-type{border-bottom:0}
+.zone h3{font-size:18px;font-weight:800;font-family:Manrope}
+.zone small{color:rgba(255,255,255,.6);font-size:14px;font-weight:600}
+.zone b{font-family:Unbounded;font-size:20px;color:var(--sun);white-space:nowrap}
+.radar{position:absolute;right:-90px;top:-90px;width:260px;height:260px;border-radius:50%;box-shadow:0 0 0 1px rgba(255,255,255,.08),0 0 0 50px rgba(255,255,255,.02),0 0 0 51px rgba(255,255,255,.08),0 0 0 100px rgba(255,255,255,.02),0 0 0 101px rgba(255,255,255,.08)}
+.radar::after{content:"";position:absolute;left:50%;top:50%;width:14px;height:14px;margin:-7px;border-radius:50%;background:var(--sun);box-shadow:0 0 0 0 rgba(255,201,74,.6);animation:ping 2.4s infinite}
+@keyframes ping{to{box-shadow:0 0 0 120px rgba(255,201,74,0)}}
+.rules{display:grid;gap:12px}
+.rule{background:#fff;border-radius:18px;padding:18px 22px;display:flex;gap:16px;align-items:flex-start}
+.rule i{flex:none;width:42px;height:42px;border-radius:12px;background:#E8EEFD;display:grid;place-items:center;color:var(--cobalt);font-style:normal;font-weight:900;font-family:Unbounded;font-size:14px}
+.rule i svg{width:22px;height:22px}
+.rule b{display:block;font-size:16px}
+.rule span{color:var(--muted);font-size:15px}
+
+/* MATERIALS */
+.mats{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.mat{border-radius:20px;padding:22px 18px;background:#fff;text-align:left;transition:transform .4s var(--ease),box-shadow .4s;position:relative;overflow:hidden}
+.mat:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.mat .sw{width:54px;height:54px;border-radius:14px;margin-bottom:14px}
+.mat b{display:block;font-size:16px}
+.mat span{font-size:14px;color:var(--muted)}
+
+/* FAQ */
+.faq{max-width:900px}
+.q{border-bottom:1px solid var(--concrete-2)}
+.q button{width:100%;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 0;text-align:left;font-weight:800;font-size:19px}
+.q button i{flex:none;width:36px;height:36px;border-radius:50%;background:var(--concrete);position:relative;transition:transform .4s var(--ease),background .3s}
+.q button i::before,.q button i::after{content:"";position:absolute;left:50%;top:50%;width:14px;height:2px;background:var(--ink);transform:translate(-50%,-50%)}
+.q button i::after{transform:translate(-50%,-50%) rotate(90deg);transition:.3s}
+.q.open button i{background:var(--cobalt);transform:rotate(180deg)}
+.q.open button i::before,.q.open button i::after{background:#fff}
+.q.open button i::after{transform:translate(-50%,-50%) rotate(0)}
+.q .a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s var(--ease)}
+.q.open .a{grid-template-rows:1fr}
+.q .a>div{overflow:hidden;color:var(--muted)}
+.q .a p{padding:0 0 24px}
+
+/* CTA */
+.cta{background:radial-gradient(90% 120% at 80% 0%,#2a5bd6,#0f2350 60%,var(--navy));color:#fff;overflow:hidden}
+.cta-in{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.cta h2{font-size:clamp(38px,6vw,84px);color:#fff}
+.cta h2 span{color:var(--sun)}
+.cta p{color:rgba(255,255,255,.75);margin:20px 0 32px;max-width:520px}
+.phone-big{font-family:Unbounded;font-size:clamp(26px,3.4vw,44px);font-weight:800;display:block;margin-bottom:24px;letter-spacing:-.01em}
+.phone-big:hover{color:var(--sun)}
+.cta-card{background:rgba(255,255,255,.07);border-radius:28px;padding:28px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.12);backdrop-filter:blur(10px)}
+.cta-card .map{border-radius:18px;overflow:hidden;height:240px;margin-bottom:18px;background:#1c3366}
+.cta-card .map iframe{width:100%;height:100%;border:0;filter:grayscale(.3) contrast(1.05)}
+.cta-card div{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.1);font-size:15px;gap:14px}
+.cta-card div:last-child{border:0}
+.cta-card span{color:rgba(255,255,255,.6)}
+footer{background:#060f22;color:rgba(255,255,255,.55);padding:28px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer .brand img{width:38px;height:38px}
+
+/* floating WA */
+.fab{position:fixed;right:22px;bottom:22px;z-index:60;width:64px;height:64px;border-radius:50%;background:var(--wa);display:grid;place-items:center;color:#fff;box-shadow:0 16px 40px -10px rgba(31,175,90,.8);transition:transform .35s var(--ease)}
+.fab::before{content:"";position:absolute;inset:0;border-radius:50%;box-shadow:0 0 0 0 rgba(31,175,90,.6);animation:ping2 2.2s infinite}
+@keyframes ping2{to{box-shadow:0 0 0 22px rgba(31,175,90,0)}}
+.fab:hover{transform:scale(1.08)}
+.fab svg{width:32px;height:32px}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(40px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.08s}.rv.d2{transition-delay:.16s}.rv.d3{transition-delay:.24s}
+
+/* responsive */
+@media (max-width:1080px){
+  .links,.nav-phone{display:none}
+  .burger{display:block}
+  .nav .btn{display:none}
+  .links.open{display:flex;position:fixed;top:72px;left:16px;right:16px;flex-direction:column;background:var(--navy);padding:22px;border-radius:20px;gap:6px;box-shadow:var(--shadow)}
+  .links.open a{font-size:18px;padding:10px 0}
+  .mats{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:900px){
+  .hero-in{grid-template-columns:1fr;padding-top:110px;padding-bottom:210px;gap:20px}
+  .badge-wrap{width:240px;order:-1;justify-self:start}
+  .stats .wrap{grid-template-columns:repeat(2,1fr)}
+  .stat:nth-child(3){border-left:0}
+  .stat{border-top:1px solid rgba(255,255,255,.18)}
+  .calc-box,.del-grid,.cta-in,.extra{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .price-grid{grid-template-columns:1fr 1fr}
+  .mosaic{grid-template-columns:1fr 1fr;grid-template-rows:240px 200px 200px}
+  .ph:first-child{grid-row:auto;grid-column:span 2}
+  .ph:nth-child(4){grid-column:span 2}
+  .gdetail{grid-template-columns:1fr;gap:14px}
+  .scale{height:200px;gap:5px}
+  .scroll-cue{display:none}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  .shapes{grid-template-columns:repeat(2,1fr)}
+  .fields,.row2{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .price-grid{grid-template-columns:1fr}
+  .mats{grid-template-columns:repeat(2,1fr)}
+  .panel{padding:22px}
+  .col span{font-size:10px;writing-mode:vertical-rl;transform:rotate(180deg)}
+  .hero .ctas .btn{flex:1;justify-content:center}
+}
+
+/* ===== MOBILE (only ≤700px, desktop untouched) ===== */
+.mbar{display:none}
+@media (max-width:700px){
+  body{padding-bottom:76px}
+  .sec{padding:56px 0}
+  h2{font-size:30px}
+  .sec-head{margin-bottom:22px;gap:12px}
+  .sec-head p{font-size:15px}
+  .eyebrow{font-size:12px}
+  .nav{padding:10px 0}
+  .brand img{width:42px;height:42px}
+  /* hero shorter */
+  .hero{min-height:auto}
+  .hero-in{padding-top:92px;padding-bottom:150px;gap:10px}
+  .badge-wrap{display:none}
+  .hero h1{font-size:44px}
+  .hero p.lead{font-size:16px;margin:16px 0 22px}
+  .hero .ctas{flex-direction:column}
+  .hero .ctas .btn{padding:15px 20px}
+  .road{height:76px}.road::before{top:36px}
+  .truck{width:230px;bottom:40px}
+  .mtn{bottom:70px!important}
+  /* stats compact */
+  .stat{padding:16px 14px}
+  .stat b{font-size:20px}.stat span{font-size:13px}
+  .marq{padding:12px 0}.marq span{font-size:16px;gap:28px}.marq-track{gap:28px}
+  /* horizontal scrollers */
+  .hs{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin-inline:-20px;padding:4px 20px 14px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .hs::-webkit-scrollbar{display:none}
+  .hs>*{scroll-snap-align:start;flex:none}
+  .tabs{display:flex;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;width:100%;border-radius:16px}
+  .tabs::-webkit-scrollbar{display:none}
+  .tab{flex:none;padding:10px 14px;font-size:14px}
+  /* prices: compact rows */
+  .price-grid{grid-template-columns:1fr;gap:8px;margin-top:16px}
+  .pcard{display:flex;align-items:center;gap:12px;padding:12px 12px 12px 16px;border-radius:16px}
+  .pcard>div:nth-child(2){flex:none;width:96px}
+  .pcard .g{font-size:24px;display:block}
+  .pcard .cls{margin:4px 0 0;font-size:12px;padding:2px 8px}
+  .pcard p{display:none}
+  .pcard .pr{flex:1}
+  .pcard .pr b{font-size:17px}.pcard .pr small{font-size:12px}
+  .pcard .order{width:42px;height:42px}
+  .pcard:hover{transform:none}
+  .note{font-size:13px;margin-top:14px}
+  /* calculator */
+  .calc-box{gap:12px}
+  .panel{padding:16px;border-radius:20px}
+  .shapes{grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:14px}
+  .shape{padding:10px 4px 8px;font-size:12px;border-radius:12px}
+  .shape svg{width:32px;height:24px;margin-bottom:4px}
+  .fields{grid-template-columns:1fr 1fr;gap:10px}
+  .fields .field:first-child:nth-last-child(3){grid-column:span 2}
+  .row2{grid-template-columns:1fr;gap:10px;margin-top:10px}
+  .field label{font-size:13px;margin-bottom:4px}
+  .field input,.field select{font-size:16px;padding:11px 12px}
+  .chk{font-size:13px;margin-top:12px}
+  .drum-vis{height:96px;margin:0 0 4px}
+  .result{display:grid;grid-template-columns:1fr;}
+  .vol{font-size:44px}
+  .trucks{margin:2px 0 12px;font-size:14px}
+  .lines{font-size:13px;gap:6px;padding-top:10px}
+  .total{margin:12px 0 14px;padding-top:10px}
+  .total b{font-size:24px}
+  .tiny{font-size:12px}
+  /* grades */
+  .purpose{flex-wrap:nowrap;margin-bottom:34px}
+  .chip{padding:10px 14px;font-size:14px}
+  .scale{height:130px;gap:4px;margin-bottom:14px}
+  .col{padding-top:6px;border-radius:8px 8px 4px 4px}
+  .col.rec::after{content:"✓";top:-22px;font-size:14px}
+  .gdetail{padding:18px;border-radius:20px;gap:10px;grid-template-columns:auto 1fr}
+  .gdetail .big{font-size:44px}
+  .gdetail h3{font-size:17px;margin-bottom:4px}
+  .gdetail p{font-size:14px}
+  .gdetail .meta{gap:16px;font-size:13px}.gdetail .meta b{font-size:15px}
+  .gdetail .btn{grid-column:span 2;justify-content:center}
+  .extra{margin-top:12px}
+  .extra.hs>*{width:82%}
+  .xcard{padding:18px}.xcard h3{font-size:16px}.xcard p{font-size:14px}
+  /* fleet: swipe gallery */
+  .mosaic.hs>.ph{width:82%;height:250px;grid-column:auto!important;grid-row:auto!important}
+  .ph figcaption{font-size:13px;padding:10px 12px}.ph figcaption b{font-size:14px}
+  /* steps: swipe */
+  .steps.hs>.step{width:70%;padding:20px}
+  .step::before{font-size:40px;margin-bottom:8px}
+  .step h3{font-size:17px}.step p{font-size:14px}
+  /* delivery */
+  .del-grid{gap:12px}
+  .zones{padding:20px;border-radius:20px}
+  .zone{padding:12px 0}
+  .zone h3{font-size:15px}.zone small{font-size:12px}.zone b{font-size:15px}
+  .zones .btn{width:100%;justify-content:center;margin-top:12px!important}
+  .rules.hs>.rule{width:78%}
+  .rule{padding:14px}
+  .rule b{font-size:15px}.rule span{font-size:13px}
+  .delivery .sec-head[style]{margin:44px 0 16px!important}
+  .mats{grid-template-columns:repeat(3,1fr);gap:8px}
+  .mat{padding:12px 10px;border-radius:14px}
+  .mat .sw{width:34px;height:34px;border-radius:10px;margin-bottom:8px}
+  .mat b{font-size:14px}.mat span{font-size:12px;line-height:1.3;display:block}
+  /* faq */
+  .q button{font-size:16px;padding:16px 0}
+  .q button i{width:30px;height:30px}
+  .q .a p{font-size:15px;padding-bottom:16px}
+  /* cta */
+  .cta h2{font-size:34px}
+  .cta p{margin:12px 0 18px;font-size:15px}
+  .phone-big{font-size:26px;margin-bottom:16px}
+  .cta-card{padding:16px;border-radius:20px}
+  .cta-card .map{height:180px}
+  .cta-card div{font-size:13px}
+  footer{padding:20px 0 24px;font-size:13px}
+  footer .wrap{flex-direction:column;align-items:flex-start;gap:10px}
+  .calc-box>*,.fields>*,.row2>*,.del-grid>*,.cta-in>*,.field .inp{min-width:0}
+  .field select{width:100%;text-overflow:ellipsis}
+  h2{font-size:26px;overflow-wrap:break-word}
+  .cta h2{font-size:32px}
+  .gdetail{grid-template-columns:1fr!important}
+  .gdetail .big{font-size:40px}
+  .gdetail .btn{grid-column:auto}
+  section[id]{scroll-margin-top:64px}
+  /* sticky action bar replaces floating button */
+  .fab{display:none}
+  .mbar{display:grid;grid-template-columns:1fr 1.4fr 1fr;gap:8px;position:fixed;left:10px;right:10px;bottom:10px;z-index:70;padding:8px;border-radius:20px;background:rgba(10,23,48,.92);backdrop-filter:blur(14px);box-shadow:0 14px 40px -12px rgba(0,0,0,.6);transform:translateY(130%);transition:transform .45s var(--ease)}
+  .mbar.show{transform:none}
+  .mbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;padding:8px 4px;border-radius:14px;color:#fff;font-weight:800;font-size:12px}
+  .mbar a svg{width:20px;height:20px}
+  .mbar .w{background:var(--wa);flex-direction:row;gap:8px;font-size:15px}
+  .mbar .c{background:rgba(255,255,255,.08)}
+}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+/* Site-specific updates: video, branded gallery, Instagram link */
+.ph .brand-shot{object-fit:contain;object-position:center;background:#101d32;filter:none}
+.ph:hover .brand-shot{filter:none;transform:scale(1.025)}
+.ph .photo-backdrop{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(14px) brightness(.42);transform:scale(1.1);pointer-events:none}
+.ph:hover .photo-backdrop{transform:scale(1.1)}
+.ph.ph-video{background:#0e1930}
+.ph.ph-video iframe{display:block;width:100%;height:100%;border:0;background:#0e1930}
+.ph.ph-video .ph-video-link{position:absolute;top:14px;left:14px;z-index:3;display:inline-flex;align-items:center;gap:7px;padding:9px 14px;border-radius:999px;background:rgba(10,23,48,.88);color:white;font-size:13px;font-weight:800;box-shadow:0 6px 20px #0005}
+.ph.ph-video figcaption{pointer-events:none;padding-right:15px}
+.instagram-follow{display:inline-flex;align-items:center;gap:12px;margin-top:17px;padding:11px 17px;border:1px solid rgba(255,255,255,.32);border-radius:999px;color:#fff;background:rgba(255,255,255,.09);font-weight:800;font-size:15px;transition:background .25s,transform .25s}
+.instagram-follow:hover{background:rgba(255,255,255,.2);transform:translateY(-2px)}
+.instagram-follow svg{width:22px;height:22px;flex:none}
+.cta-card .map + a{display:inline-flex;color:#fff;font-weight:700;font-size:13px;text-decoration:underline;text-underline-offset:3px;margin-bottom:12px}
+@media(max-width:700px){.ph.ph-video iframe{height:100%}.ph.ph-video .ph-video-link{padding:7px 10px;font-size:12px}.ph.ph-video figcaption{font-size:12px}}
+
+/* Targeted media fixes, original site layout preserved */
+.ph.ph-video{background:#101b32}
+.ph.ph-video .work-preview{display:block;width:100%;height:100%;object-fit:cover;object-position:center;background:#101b32}
+.ph .brand-shot{position:absolute;inset:0;width:100%;height:100%;object-fit:contain!important;object-position:center!important;filter:none!important;transform:none!important}
+.ph:hover .brand-shot{transform:none!important}
+.ph .photo-backdrop{filter:blur(24px) brightness(.52) saturate(1.05)}
+.ph:not(.ph-video) figcaption{left:12px;right:12px;bottom:12px;padding:10px 13px;background:rgba(10,23,48,.82);font-size:13px;line-height:1.4}
+.ph:not(.ph-video) figcaption b{font-size:clamp(12px,1vw,15px)}
+.map-live{position:relative;background:linear-gradient(135deg,#d8e7ec,#e9ece5);isolation:isolate;min-height:240px}
+.map-live iframe{position:absolute;inset:0;width:100%;height:100%;border:0;background:transparent}
+.map-pin-overlay{position:absolute!important;z-index:5;left:50%;top:50%;transform:translate(-50%,-50%);min-width:min(90%,250px);display:flex!important;flex-direction:column;gap:2px!important;align-items:center!important;justify-content:center!important;border:0!important;background:rgba(10,23,48,.91);color:#fff;border-radius:17px;padding:13px 19px!important;box-shadow:0 8px 30px #0005;text-align:center;pointer-events:none}
+.map-pin-overlay .map-pin-dot{font-size:25px;color:#fff}
+.map-pin-overlay strong{font-family:Unbounded,Manrope,sans-serif;font-size:13px}
+.map-pin-overlay small{font-size:12px;color:#e0e6f4}
+.factory-map-link{display:inline-flex;margin:0 0 10px;color:#fff;font-weight:800;text-decoration:underline;text-underline-offset:4px}
+@media(max-width:700px){.map-live{min-height:180px}.ph.ph-video .work-preview{object-fit:contain}.ph:not(.ph-video) figcaption{font-size:12px}}
+
+
+/* Финальная настройка медиа: исходная мозаика сохранена */
+.mosaic .ph{isolation:isolate}
+.mosaic .ph img.photo-backdrop{position:absolute;inset:-5%;width:110%;height:110%;object-fit:cover!important;filter:blur(18px) brightness(.78) saturate(1.12)!important;transform:scale(1.08)!important;z-index:0}
+.mosaic .ph img.brand-shot{position:absolute;inset:0;width:100%;height:100%;object-fit:contain!important;object-position:center center!important;z-index:1;filter:drop-shadow(0 3px 13px #0005)!important}
+.mosaic .ph figcaption{z-index:3;pointer-events:none}
+.mosaic .ph.ph-video video.work-preview{display:block;width:100%;height:100%;object-fit:cover!important;object-position:center center!important;background:#101b32}
+.mosaic .ph-video .ph-video-link{z-index:5}
+/* Карта без искусственной плашки и лишней кнопки */
+.cta-card .map.map-live{position:relative;overflow:hidden;background:#e8eff1}
+.cta-card .map.map-live iframe{display:block;width:100%;height:100%;border:0}
+@media(max-width:700px){.mosaic.hs>.ph{height:310px}.mosaic .ph.ph-video video.work-preview{object-fit:cover!important}}
+
+/* Final: media fills every gallery tile edge-to-edge, without empty letterboxing */
+.mosaic .ph img.brand-shot{width:100%!important;height:100%!important;inset:0!important;object-fit:cover!important;object-position:center 40%!important;filter:none!important;transform:none!important}
+.mosaic .ph:nth-child(3) img.brand-shot{object-position:62% 48%!important}
+.mosaic .ph:nth-child(4) img.brand-shot{object-position:center 42%!important}
+.mosaic .ph img.photo-backdrop{display:none!important}
+.mosaic .ph.ph-video video.work-preview{width:100%!important;height:100%!important;object-fit:cover!important}
+.cta-card .map.map-live{position:relative}
+.cta-card .map.map-live .map-click{position:absolute;inset:0;z-index:2;display:block;background:transparent;cursor:pointer}
+
+/* Final precise-only edits: brand images and matching dark map card */
+.mosaic .ph:nth-child(2) img.brand-shot { object-position:center 43%!important; }
+.mosaic .ph:nth-child(3) img.brand-shot { object-position:69% 48%!important; }
+.mosaic .ph:nth-child(4) img.brand-shot { object-position:center 55%!important; }
+.mosaic .ph figcaption .photo-credit { display:block;margin-top:4px;color:rgba(255,255,255,.76);font-size:10px;font-weight:500; }
+.cta-card.location-card{padding:16px;}
+.factory-location{display:block;overflow:hidden;border-radius:20px;background:#222c3e;color:#fff;text-decoration:none;box-shadow:0 12px 30px #0002}
+.factory-map-image{display:block;position:relative;overflow:hidden;width:100%;height:260px;background:#1b2a41;}
+.factory-map-image iframe{position:absolute;inset:0;display:block;width:100%;height:100%;border:0;pointer-events:none;filter:invert(.91) hue-rotate(177deg) saturate(.67) brightness(.70) contrast(1.07)!important;}
+.factory-map-image:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,transparent 65%,rgba(15,23,42,.22));}
+.factory-red-pin{position:absolute;width:36px;height:50px;left:50%;top:50%;transform:translate(-50%,-86%);z-index:2;filter:drop-shadow(0px 5px 4px #101928aa);}
+.factory-pin-label{position:absolute;left:50%;top:50%;transform:translate(-50%,26px);white-space:nowrap;display:inline-block;padding:7px 11px;border-radius:10px;background:#15253c;color:#fff!important;font-size:13px;font-weight:800;box-shadow:0 3px 10px #0007;z-index:2;}
+.factory-map-address{display:flex;flex-direction:column;gap:5px;padding:16px 18px 19px;background:#262c38;color:#fff!important;}
+.factory-map-address strong{font-size:17px;font-weight:850;color:#fff;}
+.factory-map-address small{font-size:15px;line-height:1.45;color:#d5d9e2!important;}
+.factory-location:hover .factory-map-address{background:#303746}
+@media(max-width:700px){.factory-map-image{height:215px}.factory-map-address{padding:15px}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2Zm5.8 14.03c-.24.68-1.42 1.32-1.96 1.37-.5.05-.97.23-3.27-.68-2.77-1.09-4.52-3.93-4.66-4.11-.13-.18-1.11-1.48-1.11-2.82 0-1.34.7-2 .95-2.27.24-.27.53-.34.71-.34l.51.01c.16.01.38-.06.6.46.23.54.77 1.88.84 2.02.07.13.11.29.02.47-.09.18-.13.29-.27.45-.13.16-.28.35-.4.47-.13.13-.27.28-.12.55.16.27.7 1.15 1.5 1.86 1.03.92 1.9 1.2 2.17 1.34.27.13.43.11.58-.07.16-.18.67-.78.85-1.05.18-.27.36-.22.6-.13.25.09 1.57.74 1.84.88.27.13.45.2.51.31.07.11.07.65-.17 1.32Z"/></symbol>
+    <symbol id="ph" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></symbol>
+  </defs>
+</svg>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#top" class="brand"><img data-logo src="assets/logo.webp" alt="Каскелен Бетон"><div><b>КАСКЕЛЕН</b><small>БЕТОН</small></div></a>
+    <nav class="links" id="links">
+      <a href="#prices">Цены</a><a href="#calc">Калькулятор</a><a href="#grades">Марки</a><a href="#delivery">Доставка</a><a href="#faq">Вопросы</a><a href="#contacts">Контакты</a>
+    </nav>
+    <a class="nav-phone" href="tel:+77750010555"><svg width="18" height="18"><use href="#ph"/></svg>+7 775 001 0555</a>
+    <a class="btn btn-wa" data-wa="Здравствуйте! Хочу заказать бетон." href="#"><svg><use href="#wa"/></svg>WhatsApp</a>
+    <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="stars"></div>
+  <svg class="mtn" data-depth="0.15" viewBox="0 0 1440 520" preserveAspectRatio="xMidYMax slice" style="bottom:110px">
+    <path fill="#27407a" opacity=".55" d="M0 520V330l120-90 90 50 150-170 120 110 110-70 170 180 140-150 160 130 140-120 130 90 110-60v310Z"/>
+    <path fill="#dfe8f8" opacity=".55" d="M360 120L325 160L342 153L356 165L372 152L388 163L404 160Z M590 160L543 190L559 185L573 194L588 184L603 192L618 190Z M900 190L870 222L885 216L898 226L912 216L926 225L939 222Z M1200 200L1165 230L1182 225L1196 234L1212 224L1228 232L1243 230Z"/>
+  </svg>
+  <svg class="mtn" data-depth="0.3" viewBox="0 0 1440 520" preserveAspectRatio="xMidYMax slice" style="bottom:110px">
+    <path fill="#1a2f5e" d="M0 520V380l160-150 110 90 190-230 160 170 130-90 200 200 170-170 150 120 170-140v340Z"/>
+    <path fill="#eef3fb" d="M460 90L419 140L438 131L454 146L472 130L489 144L507 140Z M750 170L707 200L723 195L736 204L751 194L765 202L780 200Z M1120 200L1086 234L1103 228L1117 238L1132 227L1147 237L1162 234Z"/>
+  </svg>
+  <svg class="mtn" data-depth="0.5" viewBox="0 0 1440 300" preserveAspectRatio="xMidYMax slice" style="bottom:110px;height:200px">
+    <path fill="#0f1f42" d="M0 300V190c80-30 160-60 260-40s200 40 300 10 220-80 340-60 200 70 300 60 160-40 240-50v190Z"/>
+  </svg>
+
+  <div class="wrap hero-in">
+    <div>
+      <div class="eyebrow" style="color:#9fb8ff;margin-bottom:22px">Бетонный завод · Каскелен</div>
+      <h1><span class="ln"><span>Бетон <em>у</em></span></span><span class="ln"><span><em>подножия</em></span></span><span class="ln"><span class="blue">Алатау</span></span></h1>
+      <p class="lead">Производим и привозим товарный бетон М100–М500 миксерами 10–12 м³. Каскелен, Алматы и область. ГОСТ, документы, честный объём.</p>
+      <div class="ctas">
+        <a class="btn btn-wa" data-wa="Здравствуйте! Хочу заказать бетон. Подскажите цену и время доставки." href="#"><svg><use href="#wa"/></svg>Заказать в WhatsApp</a>
+        <a class="btn btn-ghost" href="#calc">Рассчитать объём →</a>
+      </div>
+    </div>
+    <div class="badge-wrap">
+      <svg class="ring" viewBox="0 0 400 400"><defs><path id="circ" d="M200,200 m-182,0 a182,182 0 1,1 364,0 a182,182 0 1,1 -364,0"/></defs>
+        <text><textPath href="#circ" textLength="1135" lengthAdjust="spacing">КАСКЕЛЕН БЕТОН • ПРОИЗВОДСТВО • ДОСТАВКА • ГОСТ • 24/7 • </textPath></text></svg>
+      <img data-logo src="assets/logo.webp" alt="Логотип Каскелен Бетон">
+    </div>
+  </div>
+
+  <div class="road"></div>
+  <!-- signature: the turning drum -->
+  <svg class="truck" viewBox="0 0 420 190" aria-hidden="true">
+    <defs>
+      <clipPath id="drumclip"><path d="M40 52 Q48 18 120 16 L232 22 Q262 26 268 62 Q272 100 238 112 L118 120 Q46 118 40 84 Z"/></clipPath>
+      <linearGradient id="shade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".35"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".35"/></linearGradient>
+    </defs>
+    <g class="bob">
+      <rect x="22" y="122" width="300" height="14" rx="4" fill="#3a4250"/>
+      <g clip-path="url(#drumclip)">
+        <rect x="30" y="10" width="260" height="120" fill="#ffffff"/>
+        <g class="drum-stripes">
+          <g fill="#1E4FD1">
+            <path d="M0 0h24l-30 140h-24z"/><path d="M64 0h24l-30 140h-24z"/><path d="M128 0h24l-30 140h-24z"/><path d="M192 0h24l-30 140h-24z"/><path d="M256 0h24l-30 140h-24z"/><path d="M320 0h24l-30 140h-24z"/><path d="M384 0h24l-30 140h-24z"/>
+          </g>
+        </g>
+        <rect x="30" y="10" width="260" height="120" fill="url(#shade)"/>
+      </g>
+      <path d="M268 62 l22 -6 v22 l-22 4z" fill="#aab3c0"/>
+      <rect x="60" y="112" width="16" height="12" fill="#5b6574"/><rect x="200" y="112" width="16" height="12" fill="#5b6574"/>
+      <!-- cab -->
+      <path d="M300 48 h52 q16 0 24 16 l20 36 q4 8 4 16 v14 h-100 z" fill="#f4f6f9"/>
+      <path d="M312 58 h36 q8 0 12 8 l14 28 h-62 z" fill="#1b2d55"/>
+      <path d="M318 62 h20 l-10 30 h-10z" fill="#ffffff" opacity=".18"/>
+      <rect x="300" y="104" width="100" height="6" fill="#1E4FD1"/>
+      <rect x="396" y="112" width="10" height="8" rx="2" fill="#FFC94A"/>
+      <rect x="290" y="40" width="6" height="40" rx="2" fill="#7c8696"/>
+    </g>
+    <g>
+      <g class="wheel"><circle cx="90" cy="150" r="22" fill="#141922"/><circle cx="90" cy="150" r="10" fill="#9aa3b1"/><path d="M90 140v20M80 150h20" stroke="#141922" stroke-width="3"/></g>
+      <g class="wheel"><circle cx="146" cy="150" r="22" fill="#141922"/><circle cx="146" cy="150" r="10" fill="#9aa3b1"/><path d="M146 140v20M136 150h20" stroke="#141922" stroke-width="3"/></g>
+      <g class="wheel"><circle cx="352" cy="150" r="22" fill="#141922"/><circle cx="352" cy="150" r="10" fill="#9aa3b1"/><path d="M352 140v20M342 150h20" stroke="#141922" stroke-width="3"/></g>
+    </g>
+  </svg>
+  <div class="scroll-cue">листайте ↓</div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="wrap">
+    <div class="stat"><b>от <span data-count="19000">0</span> ₸</b><span>за 1 м³ бетона</span></div>
+    <div class="stat"><b><span data-count="12">0</span> м³</b><span>объём одного миксера</span></div>
+    <div class="stat"><b>М100–М500</b><span>все ходовые марки</span></div>
+    <div class="stat"><b>24/7</b><span>приём заказов в WhatsApp</span></div>
+  </div>
+</section>
+
+<div class="marq"><div class="marq-track" id="marq">
+  <span>Бетон М100–М500</span><span>Раствор</span><span>Керамзитобетон</span><span>Доставка миксером</span><span>Сыпучие материалы</span><span>Документы и ГОСТ</span>
+</div></div>
+
+<!-- PRICES -->
+<section class="sec prices grain" id="prices">
+  <div class="wrap" style="position:relative;z-index:1">
+    <div class="sec-head">
+      <div><div class="eyebrow rv">Прайс</div><h2 class="rv d1">Цены<br>за 1 м³</h2></div>
+      <div class="rv d2">
+        <div class="tabs" id="tabs">
+          <button class="tab on" data-f="0">Щебень 5×20</button><button class="tab" data-f="1">Щебень 5×10</button><button class="tab" data-f="2">Керамзит</button><button class="tab" data-f="3">Раствор</button>
+        </div>
+      </div>
+    </div>
+    <div class="price-grid" id="priceGrid"></div>
+    <div class="note rv">ⓘ <span>Цены указаны <b>без доставки</b> и ориентировочные. Точную цену на сегодня и скидку на объём уточняйте в <a href="#" data-wa="Здравствуйте! Подскажите актуальные цены на бетон." style="color:var(--wa);font-weight:800">WhatsApp</a>.</span></div>
+  </div>
+</section>
+
+<!-- CALCULATOR -->
+<section class="sec calc" id="calc">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="eyebrow rv" style="color:#9fb8ff">Калькулятор</div><h2 class="rv d1">Сколько<br>бетона нужно?</h2></div>
+      <p class="rv d2">Выберите конструкцию, введите размеры, и мы сразу посчитаем объём, количество миксеров и примерную стоимость с доставкой.</p>
+    </div>
+    <div class="calc-box">
+      <div class="panel rv">
+        <div class="shapes" id="shapes">
+          <button class="shape on" data-s="strip"><svg viewBox="0 0 46 34" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 8h38v18H4z M12 14h22v6H12z"/></svg>Ленточный</button>
+          <button class="shape" data-s="slab"><svg viewBox="0 0 46 34" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 18l16-10h22L26 18z M4 18v6h22l16-10V8 M26 18v6"/></svg>Плита</button>
+          <button class="shape" data-s="pile"><svg viewBox="0 0 46 34" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M8 6v24M8 6h6v24 M22 6v24h6V6z M36 6v24h6V6z" /></svg>Сваи</button>
+          <button class="shape" data-s="floor"><svg viewBox="0 0 46 34" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 22h38v6H4z M10 22l6-12h14l6 12"/></svg>Стяжка</button>
+        </div>
+        <div class="fields" id="fields"></div>
+        <div class="row2">
+          <div class="field"><label>Марка бетона</label><div class="inp"><select id="grade"></select></div></div>
+          <div class="field"><label>Куда везти</label><div class="inp"><select id="zone">
+            <option value="0">Каскелен и до 20 км</option><option value="1">Алматы</option><option value="2">Талгар, Есик, Капчагай и др.</option></select></div></div>
+        </div>
+        <label class="chk"><input type="checkbox" id="reserve" checked> Добавить запас 5% на усадку и потери</label>
+      </div>
+      <div class="panel result rv d1">
+        <div class="drum-vis">
+          <svg viewBox="0 0 400 190" width="100%" height="100%" aria-hidden="true">
+            <defs>
+              <clipPath id="dc2"><path d="M40 40 Q50 8 130 6 L280 14 Q330 20 336 70 Q340 120 290 132 L130 144 Q46 142 40 100 Z"/></clipPath>
+              <pattern id="st2" width="40" height="160" patternUnits="userSpaceOnUse" patternTransform="skewX(-25)"><rect width="40" height="160" fill="#fff"/><rect width="16" height="160" fill="#1E4FD1"/></pattern>
+            </defs>
+            <g clip-path="url(#dc2)">
+              <rect x="0" y="0" width="400" height="160" fill="url(#st2)" opacity=".18"/>
+              <rect id="fill" x="0" y="150" width="400" height="160" fill="url(#st2)" style="transition:y .9s cubic-bezier(.2,.8,.2,1)"/>
+            </g>
+            <path d="M40 40 Q50 8 130 6 L280 14 Q330 20 336 70 Q340 120 290 132 L130 144 Q46 142 40 100 Z" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="2"/>
+            <text id="fillTxt" x="190" y="182" text-anchor="middle" fill="rgba(255,255,255,.55)" font-family="Manrope" font-weight="700" font-size="14">заполнение миксера 12 м³</text>
+          </svg>
+        </div>
+        <div class="vol"><span id="vol">0</span><small>м³</small></div>
+        <div class="trucks" id="trucks">—</div>
+        <div class="lines">
+          <div><span id="lnBeton">Бетон</span><b id="cBeton">0 ₸</b></div>
+          <div><span id="lnDel">Доставка</span><b id="cDel">0 ₸</b></div>
+        </div>
+        <div class="total"><span>Итого примерно</span><b id="cTotal">0 ₸</b></div>
+        <a class="btn btn-wa" id="sendCalc" href="#"><svg><use href="#wa"/></svg>Отправить расчёт в WhatsApp</a>
+        <div class="tiny">Доставка оплачивается минимум за 10 м³. Точную стоимость подтвердит менеджер.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GRADES -->
+<section class="sec grades" id="grades">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="eyebrow rv">Подбор марки</div><h2 class="rv d1">Какая марка<br>под вашу задачу</h2></div>
+      <p class="rv d2">Нажмите, что строите, и подсветим подходящие марки. Или кликните по столбику.</p>
+    </div>
+    <div class="purpose rv" id="purpose"></div>
+    <div class="scale rv" id="scale"></div>
+    <div class="gdetail rv" id="gdetail"></div>
+    <div class="extra">
+      <div class="xcard rv"><h3>Керамзитобетон</h3><p>Лёгкий и тёплый: низкая теплопроводность, не впитывает воду, не плесневеет. Для стяжек, утепления перекрытий и малоэтажных стен.</p></div>
+      <div class="xcard rv d1"><h3>Сульфатостойкий бетон</h3><p>С модификаторами против солей серной кислоты. Для фундаментов в агрессивных грунтах и сооружений рядом с водой.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FLEET / PHOTOS: videos and images are served from local assets -->
+<section class="sec fleet" id="fleet">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="eyebrow rv" style="color:#9fb8ff">Наш парк</div><h2 class="rv d1">Бетон едет<br>к вам миксером</h2></div>
+      <p class="rv d2" style="color:rgba(255,255,255,.7)">Автобетоносмесители 10–12 м³ держат смесь в движении всю дорогу, поэтому бетон приезжает однородным и готовым к заливке.</p>
+    </div>
+    <div class="mosaic">
+      <figure class="ph ph-video rv">
+        <video class="work-preview" autoplay muted playsinline loop preload="metadata" poster="assets/video-poster.jpg" aria-label="Рабочий процесс Kaskelen Beton — оригинальное видео">
+          <source src="assets/working-process.mp4" type="video/mp4">
+        </video>
+        <a class="ph-video-link" href="https://www.instagram.com/reel/DZhzUxSNeiv/" target="_blank" rel="noopener noreferrer">▶ Оригинал в Instagram ↗</a>
+        <figcaption><b>Рабочий процесс Kaskelen Beton</b>Производство и доставка бетона · реальные кадры</figcaption>
+      </figure>
+      <figure class="ph rv d1">
+        <img class="brand-shot" src="assets/mixer-at-plant.webp" alt="Фирменный автобетоносмеситель Kaskelen Beton ночью на загрузке" loading="lazy" decoding="async">
+        <figcaption><b>Наш фирменный автопарк</b>Миксеры Kaskelen Beton на загрузке</figcaption>
+      </figure>
+      <figure class="ph rv d2">
+        <img class="brand-shot" src="assets/branded-mixer.webp" alt="Белый автобетоносмеситель Kaskelen Beton с зелёным фирменным названием" loading="lazy" decoding="async">
+        <figcaption><b>KASKELEN BETON</b>Фирменные миксеры на строительных объектах</figcaption>
+      </figure>
+      <figure class="ph rv d1">
+        <img class="brand-shot production-stock" src="https://images.pexels.com/photos/12032991/pexels-photo-12032991.jpeg?auto=compress&amp;dpr=1&amp;h=750&amp;w=1260" onerror="this.onerror=null;this.src='assets/production-fallback.webp'" alt="Бетонный производственный комплекс с автобетоносмесителем у загрузочного узла" loading="lazy" decoding="async">
+        <figcaption><b>Производство бетона</b>Загрузка смесей в автобетоносмесители <small class="photo-credit">Иллюстрация: Sergei Skrynnik / Pexels</small></figcaption>
+      </figure>
+    </div>
+    <a class="instagram-follow rv" href="https://www.instagram.com/kaskelen.beton_?vrfl=cGk0dDNsNW9oazB6" target="_blank" rel="noopener noreferrer" aria-label="Следите за нами в Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="6"/><circle cx="12" cy="12" r="4.2"/><circle cx="18" cy="6" r="1" fill="currentColor" stroke="none"/></svg>Следите за нами в Instagram <span aria-hidden="true">↗</span></a>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section class="sec" style="background:var(--concrete)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="eyebrow rv">Как мы работаем</div><h2 class="rv d1">От заявки<br>до заливки</h2></div>
+    </div>
+    <div class="steps">
+      <div class="step rv"><h3>Заявка</h3><p>Пишите в WhatsApp или звоните. Подскажем марку и посчитаем объём.</p></div>
+      <div class="step rv d1"><h3>Оплата</h3><p>Наличными или безналом. Юрлицам выставляем счёт и даём все документы.</p></div>
+      <div class="step rv d2"><h3>Производство</h3><p>Замешиваем смесь на заводе в Каскелене по ГОСТ, каждая партия под контролем.</p></div>
+      <div class="step rv d3"><h3>Доставка</h3><p>Миксер приезжает в согласованное время. На выгрузку даём 1 час.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- DELIVERY -->
+<section class="sec delivery grain" id="delivery" style="padding-top:0">
+  <div class="wrap" style="position:relative;z-index:1">
+    <div class="sec-head">
+      <div><div class="eyebrow rv">Доставка</div><h2 class="rv d1">Цены на<br>транспортировку</h2></div>
+      <p class="rv d2">Считаем за кубометр. Если заказываете меньше 10 м³, доставка оплачивается как за 10 м³.</p>
+    </div>
+    <div class="del-grid">
+      <div class="zones rv">
+        <div class="radar"></div>
+        <div class="zone"><div><h3>Каскелен и окрестности</h3><small>до 20 км от завода</small></div><b>от 3 000 ₸/м³</b></div>
+        <div class="zone"><div><h3>Алматы</h3><small>все районы города</small></div><b>от 4 000 ₸/м³</b></div>
+        <div class="zone"><div><h3>Алматинская область</h3><small>Талгар, Есик, Конаев и др.</small></div><b>договорная</b></div>
+        <div class="zone"><div><h3>Простой сверх 1 часа</h3><small>за каждые 30 минут</small></div><b>2 500 ₸</b></div>
+        <a class="btn btn-sun" style="margin-top:22px" data-wa="Здравствуйте! Сколько будет стоить доставка бетона на мой адрес?" href="#"><svg><use href="#wa"/></svg>Узнать цену на мой адрес</a>
+      </div>
+      <div class="rules">
+        <div class="rule rv"><i>12</i><div><b>Миксеры 10–12 м³</b><span>Готовый бетон возим автобетоносмесителями.</span></div></div>
+        <div class="rule rv d1"><i>3+</i><div><b>Сухие смеси и сыпучка самосвалами</b><span>Самосвалы 3–20 м³, минимальный заказ 3 м³.</span></div></div>
+        <div class="rule rv d2"><i>1ч</i><div><b>Выгрузка 1 час</b><span>Для объёма от 10 м³. Дальше простой 2 500 ₸ за 30 минут.</span></div></div>
+        <div class="rule rv d3"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 18h16M6 18V9l6-4 6 4v9M10 18v-5h4v5"/></svg></i><div><b>Бетононасос по запросу</b><span>Если миксер не подъезжает близко, подберём насос или лоток.</span></div></div>
+      </div>
+    </div>
+
+    <div class="sec-head" style="margin:90px 0 30px">
+      <div><div class="eyebrow rv">Ещё возим</div><h2 class="rv d1" style="font-size:clamp(28px,3.6vw,44px)">Сыпучие материалы</h2></div>
+      <a class="btn btn-line rv" data-wa="Здравствуйте! Интересуют сыпучие материалы, подскажите цены." href="#">Цены в WhatsApp →</a>
+    </div>
+    <div class="mats">
+      <div class="mat rv"><div class="sw" style="background:radial-gradient(circle at 30% 30%,#e8d3a3,#c9a96b)"></div><b>Песок</b><span>мытый, речной</span></div>
+      <div class="mat rv d1"><div class="sw" style="background:radial-gradient(circle at 30% 30%,#b9bec6 0 18%,#8d949e 19% 34%,#c8ccd2 35% 52%,#7c838d 53%)"></div><b>Щебень</b><span>5×10, 5×20, 20×40</span></div>
+      <div class="mat rv d2"><div class="sw" style="background:radial-gradient(circle at 30% 30%,#c9b896,#9d8a66)"></div><b>ПГС</b><span>песчано-гравийная</span></div>
+      <div class="mat rv d3"><div class="sw" style="background:radial-gradient(circle at 30% 30%,#d6d4cf,#a9a59c)"></div><b>Отсев</b><span>дробления</span></div>
+      <div class="mat rv d1"><div class="sw" style="background:radial-gradient(circle at 30% 30%,#c58b5d 0 30%,#9b603a 31%)"></div><b>Керамзит</b><span>в мешках и навалом</span></div>
+      <div class="mat rv d2"><div class="sw" style="background:radial-gradient(circle at 30% 30%,#a7adb5,#6c737d)"></div><b>Гравий</b><span>для дренажа</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="sec-head"><div><div class="eyebrow rv">Вопросы</div><h2 class="rv d1">Частые вопросы</h2></div></div>
+    <div class="faq" id="faqList"></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="sec cta" id="contacts">
+  <div class="wrap cta-in">
+    <div>
+      <div class="eyebrow rv" style="color:#9fb8ff">Заказ и консультация</div>
+      <h2 class="rv d1">Нужен бетон<br><span>сегодня?</span></h2>
+      <p class="rv d2">Напишите объём и адрес объекта, ответим с ценой и временем доставки.</p>
+      <a class="phone-big rv d2" href="tel:+77750010555">+7 775 001 0555</a>
+      <div style="display:flex;gap:14px;flex-wrap:wrap" class="rv d3">
+        <a class="btn btn-wa" data-wa="Здравствуйте! Хочу заказать бетон." href="#"><svg><use href="#wa"/></svg>Написать в WhatsApp</a>
+        <a class="btn btn-ghost" href="tel:+77750010555"><svg><use href="#ph"/></svg>Позвонить</a>
+      </div>
+      <a class="instagram-follow rv d3" href="https://www.instagram.com/kaskelen.beton_?vrfl=cGk0dDNsNW9oazB6" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="6"/><circle cx="12" cy="12" r="4.2"/><circle cx="18" cy="6" r="1" fill="currentColor" stroke="none"/></svg>Следите за нами</a>
+    </div>
+    <div class="cta-card rv d1 location-card">
+      <a class="factory-location" href="https://2gis.kz/almaty/geo/70000001103667052/76.609168,43.224356" target="_blank" rel="noopener noreferrer" aria-label="Открыть Kaskelen Beton на 2ГИС по адресу Территория АКХ Ленинский, 717">
+        <span class="factory-map-image">
+          <iframe title="Точное местоположение Kaskelen Beton" loading="lazy" tabindex="-1" aria-hidden="true" src="https://www.openstreetmap.org/export/embed.html?bbox=76.605168%2C43.221856%2C76.613168%2C43.226856&amp;layer=mapnik" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <span class="factory-pin-label">Kaskelen Beton</span>
+          <svg class="factory-red-pin" viewBox="0 0 48 66" aria-hidden="true"><path d="M24 2C11.3 2 1 12.3 1 25c0 18.2 23 39 23 39s23-20.8 23-39C47 12.3 36.7 2 24 2Z" fill="#ec4842" stroke="#b62223" stroke-width="1.3"/><circle cx="24" cy="25" r="9" fill="#ffffff"/></svg>
+        </span>
+        <span class="factory-map-address"><strong>Каскелен Бетон</strong><small>с. Айтей, территория АКХ Ленинский, 717</small></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a href="#top" class="brand"><img data-logo src="assets/logo.webp" alt=""><div><b style="font-size:14px">КАСКЕЛЕН БЕТОН</b></div></a>
+    <span>© <span id="yr"></span> Каскелен Бетон. Производство и доставка бетона.</span>
+    <a href="tel:+77750010555" style="color:#fff;font-weight:800">+7 775 001 0555</a>
+  </div>
+</footer>
+
+<nav class="mbar" id="mbar" aria-label="Быстрые действия">
+  <a class="c" href="tel:+77750010555"><svg><use href="#ph"/></svg>Звонок</a>
+  <a class="w" data-wa="Здравствуйте! Хочу заказать бетон." href="#"><svg><use href="#wa"/></svg>WhatsApp</a>
+  <a class="c" href="#calc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="5" y="3" width="14" height="18" rx="3"/><path d="M8 7h8M8 12h2M14 12h2M8 16h2M14 16h2"/></svg>Расчёт</a>
+</nav>
+<a class="fab" data-wa="Здравствуйте! Хочу заказать бетон." href="#" aria-label="WhatsApp"><svg><use href="#wa"/></svg></a>
+
+<script>
+const LOGO="assets/logo.webp";document.querySelectorAll("img[data-logo]").forEach(i=>i.src=LOGO);
+const WA='77750010555';
+const wa=t=>`https://wa.me/${WA}?text=${encodeURIComponent(t)}`;
+document.querySelectorAll('[data-wa]').forEach(a=>{a.href=wa(a.dataset.wa);a.target='_blank';a.rel='noopener'});
+const fmt=n=>Math.round(n).toLocaleString('ru-RU').replace(/,/g,' ')+' ₸';
+document.getElementById('yr').textContent=new Date().getFullYear();
+
+/* ---------- data ---------- */
+const G=[
+ {g:'М100',b:'B7,5',mpa:9.8, use:'Подготовка, подбетонка, бордюры, лёгкие заборы.',p:[19000,20000,25500,17300]},
+ {g:'М150',b:'B12,5',mpa:16.4,use:'Фундаменты бань, гаражей, беседок; дорожки, столбы.',p:[20000,21000,27000,18500]},
+ {g:'М200',b:'B15',mpa:19.6,use:'Отмостки, лестницы, площадки, лёгкий фундамент.',p:[21000,22000,null,19800]},
+ {g:'М250',b:'B20',mpa:26.2,use:'Ленточные и свайные фундаменты, перекрытия с арматурой.',p:[22000,23000,null,null]},
+ {g:'М300',b:'B22,5',mpa:29.4,use:'Самая ходовая марка: любой фундамент частного дома.',p:[23000,24000,null,null]},
+ {g:'М350',b:'B25',mpa:32.7,use:'Монолит, плиты перекрытия, бассейны, колонны.',p:[24000,25000,null,null]},
+ {g:'М400',b:'B30',mpa:39.3,use:'Ответственные конструкции, мосты, гидросооружения.',p:[25000,26000,null,null]},
+ {g:'М450',b:'B35',mpa:45.8,use:'Высокие нагрузки: опоры, ригели, промышленные полы.',p:[26000,27000,null,null]},
+ {g:'М500',b:'B40',mpa:52.4,use:'Спецобъекты: дамбы, хранилища, мостовые конструкции.',p:[27000,28000,null,null]},
+];
+const FILLER=['щебень 5×20','щебень 5×10','керамзит','раствор'];
+const DEL=[3000,4000,5000];
+
+/* ---------- prices ---------- */
+let f=0;
+function renderPrices(){
+  const grid=document.getElementById('priceGrid');
+  grid.innerHTML=G.map((x,i)=>{
+    const p=x.p[f];
+    return `<div class="pcard ${p?'':'na'}"><div class="bar" style="width:0" data-w="${(x.mpa/52.4*100).toFixed(0)}%"></div>
+      <div><span class="g">${x.g}</span><span class="cls">${x.b}</span></div>
+      <p>${x.use}</p>
+      <div class="pr"><div><small>за 1 м³, ${FILLER[f]}</small><b>${p?'от '+fmt(p):'под заказ'}</b></div>
+      <a class="order" target="_blank" rel="noopener" href="${wa(`Здравствуйте! Хочу заказать бетон ${x.g} (${FILLER[f]}). Объём: ... м³, адрес: ...`)}" aria-label="Заказать ${x.g}"><svg><use href="#wa"/></svg></a></div></div>`}).join('');
+  requestAnimationFrame(()=>setTimeout(()=>grid.querySelectorAll('.bar').forEach(b=>b.style.width=b.dataset.w),60));
+}
+document.getElementById('tabs').addEventListener('click',e=>{const t=e.target.closest('.tab');if(!t)return;
+  document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x===t));f=+t.dataset.f;renderPrices()});
+renderPrices();
+
+/* ---------- calculator ---------- */
+const SH={
+ strip:[['Общая длина ленты','м',40],['Ширина ленты','м',0.4],['Высота ленты','м',0.8]],
+ slab:[['Длина','м',10],['Ширина','м',8],['Толщина','м',0.25]],
+ pile:[['Количество свай','шт',24],['Диаметр','м',0.3],['Глубина','м',2]],
+ floor:[['Площадь','м²',60],['Толщина','см',7]],
+};
+let shape='strip';
+const gradeSel=document.getElementById('grade');
+gradeSel.innerHTML=G.map((x,i)=>`<option value="${i}" ${x.g==='М300'?'selected':''}>${x.g} · ${x.b}</option>`).join('');
+function renderFields(){
+  document.getElementById('fields').innerHTML=SH[shape].map((d,i)=>`<div class="field"><label>${d[0]}</label><div class="inp"><input type="number" min="0" step="any" inputmode="decimal" id="v${i}" value="${d[2]}"><span class="u">${d[1]}</span></div></div>`).join('');
+  document.querySelectorAll('#fields input').forEach(i=>i.addEventListener('input',calc));
+  if(shape==='floor'){gradeSel.value=2}
+  calc();
+}
+document.getElementById('shapes').addEventListener('click',e=>{const b=e.target.closest('.shape');if(!b)return;
+  document.querySelectorAll('.shape').forEach(x=>x.classList.toggle('on',x===b));shape=b.dataset.s;renderFields()});
+['grade','zone','reserve'].forEach(id=>document.getElementById(id).addEventListener('input',calc));
+let shown=0;
+function tween(el,to,suffix=''){const from=parseFloat(el.dataset.v||0);el.dataset.v=to;const t0=performance.now();
+  (function step(t){const k=Math.min(1,(t-t0)/600),e=1-Math.pow(1-k,3),v=from+(to-from)*e;el.textContent=suffix==='m'?v.toFixed(1).replace('.',','):fmt(v);if(k<1)requestAnimationFrame(step)})(t0)}
+function calc(){
+  const v=i=>Math.max(0,parseFloat((document.getElementById('v'+i)||{}).value)||0);
+  let vol=0;
+  if(shape==='strip')vol=v(0)*v(1)*v(2);
+  if(shape==='slab')vol=v(0)*v(1)*v(2);
+  if(shape==='pile')vol=v(0)*Math.PI*Math.pow(v(1)/2,2)*v(2);
+  if(shape==='floor')vol=v(0)*v(1)/100;
+  if(document.getElementById('reserve').checked)vol*=1.05;
+  vol=Math.round(vol*10)/10;
+  const gi=+gradeSel.value,z=+document.getElementById('zone').value;
+  const price=G[gi].p[0];
+  const beton=vol*price;
+  const del=vol>0?Math.max(vol,10)*DEL[z]:0;
+  tween(document.getElementById('vol'),vol,'m');
+  tween(document.getElementById('cBeton'),beton);
+  tween(document.getElementById('cDel'),del);
+  tween(document.getElementById('cTotal'),beton+del);
+  document.getElementById('lnBeton').textContent=`Бетон ${G[gi].g} · ${vol.toString().replace('.',',')} м³ × ${fmt(price)}`;
+  document.getElementById('lnDel').textContent=`Доставка${z===2?' (от, уточняется)':''}${vol<10&&vol>0?' · как за 10 м³':''}`;
+  const n=Math.ceil(vol/12);
+  document.getElementById('trucks').textContent=vol>0?`${n} ${n%10===1&&n%100!==11?'миксер':(n%10>=2&&n%10<=4&&(n%100<10||n%100>=20))?'миксера':'миксеров'} по 12 м³`:'Введите размеры';
+  const last=vol%12||(vol>0?12:0);const ratio=Math.min(1,last/12);
+  document.getElementById('fill').setAttribute('y',(150-ratio*140).toFixed(1));
+  document.getElementById('fillTxt').textContent=vol>0?`${n>1?'последний ':''}миксер заполнен на ${Math.round(ratio*100)}%`:'заполнение миксера 12 м³';
+  const names={strip:'ленточный фундамент',slab:'плита',pile:'сваи',floor:'стяжка'};
+  const zn=document.getElementById('zone').selectedOptions[0].text;
+  document.getElementById('sendCalc').href=wa(`Здравствуйте! Расчёт с сайта:\nКонструкция: ${names[shape]}\nОбъём: ${vol} м³\nМарка: ${G[gi].g}\nКуда: ${zn}\nПримерно: ${fmt(beton+del)}\nПодскажите точную цену и время доставки.`);
+  document.getElementById('sendCalc').target='_blank';
+}
+renderFields();
+
+/* ---------- grades ---------- */
+const PURP=[['Дорожки и отмостка',[1,2]],['Забор и столбы',[1,2]],['Баня, гараж, беседка',[1,2,3]],['Фундамент дома',[4,5]],['Плиты перекрытия',[4,5]],['Бассейн',[5,6]],['Коммерческий объект',[6,7,8]]];
+const sc=document.getElementById('scale'),pu=document.getElementById('purpose');
+sc.innerHTML=G.map((x,i)=>`<div class="col" data-i="${i}" style="height:${(22+x.mpa/52.4*78).toFixed(0)}%"><span>${x.g}</span></div>`).join('');
+pu.innerHTML=PURP.map((p,i)=>`<button class="chip" data-p="${i}">${p[0]}</button>`).join('');
+function pickGrade(i){
+  sc.querySelectorAll('.col').forEach(c=>c.classList.toggle('on',+c.dataset.i===i));
+  const x=G[i];
+  document.getElementById('gdetail').innerHTML=`<div class="big">${x.g}</div><div><h3>Класс ${x.b}</h3><p>${x.use}</p>
+   <div class="meta"><div><span style="color:var(--muted)">Прочность</span><b>${x.mpa.toString().replace('.',',')} МПа</b></div><div><span style="color:var(--muted)">Цена (5×20)</span><b>от ${fmt(x.p[0])}</b></div></div></div>
+   <a class="btn btn-wa" target="_blank" rel="noopener" href="${wa('Здравствуйте! Хочу заказать бетон '+x.g+'. Объём: ... м³')}"><svg><use href="#wa"/></svg>Заказать ${x.g}</a>`;
+}
+sc.addEventListener('click',e=>{const c=e.target.closest('.col');if(c)pickGrade(+c.dataset.i)});
+pu.addEventListener('click',e=>{const b=e.target.closest('.chip');if(!b)return;
+  const on=!b.classList.contains('on');pu.querySelectorAll('.chip').forEach(x=>x.classList.remove('on'));
+  const rec=on?PURP[+b.dataset.p][1]:[];if(on)b.classList.add('on');
+  sc.querySelectorAll('.col').forEach(c=>c.classList.toggle('rec',rec.includes(+c.dataset.i)));
+  if(rec.length)pickGrade(rec[rec.length-1>0?Math.floor((rec.length-1)/2):0]);});
+pickGrade(4);
+
+/* ---------- faq ---------- */
+const FAQ=[
+ ['Какой бетон нужен для фундамента частного дома?','Для ленточного или плитного фундамента берите М300 (B22,5): это самая популярная марка для частного строительства. Для лёгких построек вроде бани или гаража хватит М200–М250.'],
+ ['Можно ли заливать бетон зимой?','Да. Зимой добавляем противоморозные добавки, а уложенный бетон нужно укрыть и прогревать. Скажите менеджеру, что заливка зимняя, и мы подберём состав.'],
+ ['Какой минимальный заказ?','Готовый бетон возим миксером, доставка оплачивается минимум как за 10 м³. Сухие смеси и сыпучие материалы от 3 м³ самосвалом.'],
+ ['Сколько времени даётся на выгрузку?','При объёме от 10 м³ на выгрузку есть 1 час. Дальше простой стоит 2 500 ₸ за каждые 30 минут, поэтому подготовьте опалубку и подъезд заранее.'],
+ ['Работаете с юрлицами?','Да. Выставляем счёт, оплата безналом, даём полный пакет документов и паспорта качества на бетон.'],
+ ['Как быстро привезёте?','Обычно в день заявки или на следующий день, в зависимости от загрузки. Напишите в WhatsApp адрес и объём, и сразу скажем точное время.'],
+];
+document.getElementById('faqList').innerHTML=FAQ.map(q=>`<div class="q rv"><button><span>${q[0]}</span><i></i></button><div class="a"><div><p>${q[1]}</p></div></div></div>`).join('');
+document.getElementById('faqList').addEventListener('click',e=>{const b=e.target.closest('button');if(b)b.parentElement.classList.toggle('open')});
+
+/* ---------- marquee dup ---------- */
+const mq=document.getElementById('marq');mq.innerHTML+=mq.innerHTML;
+
+/* ---------- reveal + counters ---------- */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+const co=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target,to=+el.dataset.count,t0=performance.now();
+  (function s(t){const k=Math.min(1,(t-t0)/1400),v=to*(1-Math.pow(1-k,3));el.textContent=Math.round(v).toLocaleString('ru-RU').replace(/,/g,' ');if(k<1)requestAnimationFrame(s)})(t0);co.unobserve(el)}),{threshold:.5});
+document.querySelectorAll('[data-count]').forEach(el=>co.observe(el));
+
+/* ---------- nav + parallax ---------- */
+const nav=document.getElementById('nav'),mtns=document.querySelectorAll('.mtn');
+let mx=0;
+function onScroll(){const y=scrollY;nav.classList.toggle('solid',y>40);
+  if(y<innerHeight*1.2)mtns.forEach(m=>m.style.transform=`translate3d(${mx*m.dataset.depth*-30}px,${y*m.dataset.depth}px,0)`)}
+addEventListener('scroll',onScroll,{passive:true});
+document.querySelector('.hero').addEventListener('mousemove',e=>{mx=e.clientX/innerWidth-.5;onScroll()});
+onScroll();
+const burger=document.getElementById('burger'),links=document.getElementById('links');
+burger.addEventListener('click',()=>links.classList.toggle('open'));
+links.addEventListener('click',e=>{if(e.target.tagName==='A')links.classList.remove('open')});
+
+
+/* mobile: swipe rows + sticky bar */
+const mq700=matchMedia('(max-width:700px)');
+function mob(){const on=mq700.matches;['.mosaic','.steps','.rules','.extra','#purpose'].forEach(s=>{const el=document.querySelector(s);if(el)el.classList.toggle('hs',on)})}
+mq700.addEventListener('change',mob);mob();
+const mbar=document.getElementById('mbar');
+addEventListener('scroll',()=>mbar.classList.toggle('show',scrollY>innerHeight*.5),{passive:true});
+/* image fallback */
+document.querySelectorAll('.ph img').forEach(img=>img.addEventListener('error',()=>{img.style.display='none'}));
+</script>
+</body>
+</html>

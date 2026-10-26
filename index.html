@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Каскелен Бетон: бетон с завода в Каскелене с доставкой | Алматы и область</title>
-<meta name="description" content="Каскелен Бетон: производство и доставка товарного бетона М100–М500, раствора и керамзитобетона. Миксеры 10–12 м³, ГОСТ, документы. Каскелен, Алматы, Алматинская область. WhatsApp +7 775 001 0555.">
+<meta name="description" content="Каскелен Бетон: производство и доставка товарного бетона М100–М500. Миксеры 10–12 м³, ГОСТ, документы. На сайте сразу указаны цены без НДС и с НДС. Каскелен, Алматы, Алматинская область. WhatsApp +7 775 001 0555.">
 <link rel="icon" href="assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,7 +65,7 @@ h2{font-size:clamp(34px,5vw,64px);font-weight:800;text-transform:uppercase}
 .brand:hover img{transform:rotate(-12deg) scale(1.06)}
 .brand b{font-family:Unbounded;font-weight:800;font-size:16px;letter-spacing:.02em;line-height:1}
 .brand small{display:block;font-size:12px;letter-spacing:.2em;opacity:.7;margin-top:4px;font-weight:700}
-.links{display:flex;gap:26px;margin-left:auto}
+.links{display:flex;gap:clamp(12px,1.2vw,22px);margin-left:auto}
 .links a{color:rgba(255,255,255,.82);font-weight:700;font-size:15px;position:relative;padding:6px 0}
 .links a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--sun);transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease)}
 .links a:hover{color:#fff}.links a:hover::after{transform:scaleX(1)}
@@ -537,6 +537,41 @@ footer .brand img{width:38px;height:38px}
 .factory-map-address small{font-size:15px;line-height:1.45;color:#d5d9e2!important;}
 .factory-location:hover .factory-map-address{background:#303746}
 @media(max-width:700px){.factory-map-image{height:215px}.factory-map-address{padding:15px}}
+
+/* Sections extend existing visual tokens and reusable cards. */
+.calc-vat-field{margin-top:18px}
+.calc-vat-field .tabs{box-shadow:none;background:rgba(255,255,255,.11);padding:5px}
+.calc-vat-field .tab{color:rgba(255,255,255,.75);white-space:nowrap}
+.calc-vat-field .tab.on{background:var(--cobalt);color:#fff}
+.objects{background:var(--snow)}
+.objects-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.object-card{padding:12px 12px 22px;min-width:0}
+.object-card .object-photo{height:250px;margin-bottom:20px;border-radius:16px;background:linear-gradient(140deg,#203766,#101d39);isolation:isolate}
+.object-photo::before{content:attr(data-image-caption);position:absolute;inset:0;display:grid;place-items:center;padding:25px;background:repeating-linear-gradient(-55deg,transparent 0 32px,#ffffff08 32px 42px);font-weight:800;color:#ffffffbb;font-size:16px;text-align:center;z-index:0}
+.object-photo img{position:absolute;inset:0;z-index:1}
+.object-photo figcaption{z-index:2}
+.object-card h3{font-size:clamp(15px,1.45vw,21px);padding:0 10px 3px;line-height:1.25}
+.object-photo img{display:block;width:100%;height:100%;object-fit:cover}
+.object-photo figcaption{left:8px;right:8px;bottom:8px;padding:9px 10px;transform:none;opacity:1;background:rgba(10,23,48,.83);font-size:11px}
+.object-photo .photo-credit{display:block;font-size:11px;color:#fff;line-height:1.4;font-weight:600}
+.objects-cta{margin-top:24px;padding:22px 28px;background:var(--cobalt);border-radius:var(--r);color:#fff;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.objects-cta .stat{padding:0;border:0}
+.objects-cta .stat b{font-size:clamp(24px,3vw,38px);font-family:Unbounded,Manrope,system-ui,sans-serif}
+.objects-cta .stat span{opacity:.95}
+.pump-section{margin-top:68px}
+.pump-section .sec-head{margin-bottom:24px}
+.pump-section h2{font-size:clamp(28px,3.7vw,46px)}
+.pump-section .zones{padding:22px 34px 28px}
+.pump-section .zone{position:relative;z-index:1}
+.pump-section .radar{opacity:.24;pointer-events:none}
+.pump-section .zone h3{font-family:Manrope,system-ui,sans-serif}
+.pump-section .zone b{font-family:Unbounded,Manrope,system-ui,sans-serif;color:#fff}
+.pump-section .zone small{display:block;line-height:1.6;margin-top:4px}
+.pump-section .zones .btn{margin-top:20px}
+.pump-disclaimer{font-size:13px;color:rgba(255,255,255,.7);margin-top:12px;max-width:720px}
+@media(max-width:900px){.objects-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.objects-grid{grid-template-columns:1fr;gap:12px}.object-card{display:block!important}.object-card .object-photo{width:100%}.object-card .object-photo{height:210px;margin-bottom:15px}.object-card h3{font-size:18px}.objects-cta{padding:20px;gap:16px}.objects-cta .btn{width:100%;justify-content:center}.pump-section{margin-top:42px}.pump-section .zones{padding:20px}.pump-section .zone{align-items:flex-start}.pump-section .zone b{white-space:nowrap;font-size:14px}.calc-vat-field .tabs{width:auto;max-width:100%;display:inline-flex}.calc-vat-field .tab{font-size:13px}}
+@media(max-width:390px){.pump-section .zone{gap:8px}.pump-section .zone small{font-size:11px}.pump-section .zone b{font-size:12px}}
 </style>
 </head>
 <body>
@@ -553,7 +588,7 @@ footer .brand img{width:38px;height:38px}
   <div class="wrap">
     <a href="#top" class="brand"><img data-logo src="assets/logo.webp" alt="Каскелен Бетон"><div><b>КАСКЕЛЕН</b><small>БЕТОН</small></div></a>
     <nav class="links" id="links">
-      <a href="#prices">Цены</a><a href="#calc">Калькулятор</a><a href="#grades">Марки</a><a href="#delivery">Доставка</a><a href="#faq">Вопросы</a><a href="#contacts">Контакты</a>
+      <a href="#prices">Цены</a><a href="#calc">Калькулятор</a><a href="#grades">Марки</a><a href="#objects">Объекты</a><a href="#delivery">Доставка</a><a href="#faq">Вопросы</a><a href="#contacts">Контакты</a>
     </nav>
     <a class="nav-phone" href="tel:+77750010555"><svg width="18" height="18"><use href="#ph"/></svg>+7 775 001 0555</a>
     <a class="btn btn-wa" data-wa="Здравствуйте! Хочу заказать бетон." href="#"><svg><use href="#wa"/></svg>WhatsApp</a>
@@ -633,7 +668,7 @@ footer .brand img{width:38px;height:38px}
 <!-- STATS -->
 <section class="stats">
   <div class="wrap">
-    <div class="stat"><b>от <span data-count="19000">0</span> ₸</b><span>за 1 м³ бетона</span></div>
+    <div class="stat"><b>22 000 / 24 000 ₸</b><span>за 1 м³ бетона<br>без НДС / с НДС</span></div>
     <div class="stat"><b><span data-count="12">0</span> м³</b><span>объём одного миксера</span></div>
     <div class="stat"><b>М100–М500</b><span>все ходовые марки</span></div>
     <div class="stat"><b>24/7</b><span>приём заказов в WhatsApp</span></div>
@@ -641,7 +676,7 @@ footer .brand img{width:38px;height:38px}
 </section>
 
 <div class="marq"><div class="marq-track" id="marq">
-  <span>Бетон М100–М500</span><span>Раствор</span><span>Керамзитобетон</span><span>Доставка миксером</span><span>Сыпучие материалы</span><span>Документы и ГОСТ</span>
+  <span>Бетон М100–М500</span><span>Раствор</span><span>Доставка миксером</span><span>Бетононасос</span><span>Документы и ГОСТ</span><span>Собственное производство</span>
 </div></div>
 
 <!-- PRICES -->
@@ -650,13 +685,11 @@ footer .brand img{width:38px;height:38px}
     <div class="sec-head">
       <div><div class="eyebrow rv">Прайс</div><h2 class="rv d1">Цены<br>за 1 м³</h2></div>
       <div class="rv d2">
-        <div class="tabs" id="tabs">
-          <button class="tab on" data-f="0">Щебень 5×20</button><button class="tab" data-f="1">Щебень 5×10</button><button class="tab" data-f="2">Керамзит</button><button class="tab" data-f="3">Раствор</button>
-        </div>
+        <p style="margin:0;color:var(--muted);font-weight:700">В каждой карточке сразу указаны две цены: без НДС и с НДС.</p>
       </div>
     </div>
     <div class="price-grid" id="priceGrid"></div>
-    <div class="note rv">ⓘ <span>Цены указаны <b>без доставки</b> и ориентировочные. Точную цену на сегодня и скидку на объём уточняйте в <a href="#" data-wa="Здравствуйте! Подскажите актуальные цены на бетон." style="color:var(--wa);font-weight:800">WhatsApp</a>.</span></div>
+    <div class="note rv">ⓘ <span>Цены указаны <b>за 1 м³ без доставки</b>. На карточках показаны оба варианта: без НДС и с НДС. Цена с НДС применяется для юрлиц при безналичной оплате. Актуальность цен и скидки на объём уточняйте в <a href="#" data-wa="Здравствуйте! Подскажите актуальные цены на бетон без НДС и с НДС." style="color:var(--wa);font-weight:800">WhatsApp</a>.</span></div>
   </div>
 </section>
 
@@ -681,6 +714,7 @@ footer .brand img{width:38px;height:38px}
           <div class="field"><label>Куда везти</label><div class="inp"><select id="zone">
             <option value="0">Каскелен и до 20 км</option><option value="1">Алматы</option><option value="2">Талгар, Есик, Капчагай и др.</option></select></div></div>
         </div>
+        <div class="field calc-vat-field"><label>Режим расчёта</label><div class="tabs" id="calcVatTabs" role="group" aria-label="НДС в калькуляторе"><button type="button" class="tab on" data-vat="0" aria-pressed="true">Без НДС</button><button type="button" class="tab" data-vat="1" aria-pressed="false">С НДС</button></div></div>
         <label class="chk"><input type="checkbox" id="reserve" checked> Добавить запас 5% на усадку и потери</label>
       </div>
       <div class="panel result rv d1">
@@ -706,7 +740,7 @@ footer .brand img{width:38px;height:38px}
         </div>
         <div class="total"><span>Итого примерно</span><b id="cTotal">0 ₸</b></div>
         <a class="btn btn-wa" id="sendCalc" href="#"><svg><use href="#wa"/></svg>Отправить расчёт в WhatsApp</a>
-        <div class="tiny">Доставка оплачивается минимум за 10 м³. Точную стоимость подтвердит менеджер.</div>
+        <div class="tiny">Цена бетона учитывает выбранный режим НДС. Доставка оплачивается минимум за 10 м³. Точную стоимость подтвердит менеджер.</div>
       </div>
     </div>
   </div>
@@ -722,10 +756,6 @@ footer .brand img{width:38px;height:38px}
     <div class="purpose rv" id="purpose"></div>
     <div class="scale rv" id="scale"></div>
     <div class="gdetail rv" id="gdetail"></div>
-    <div class="extra">
-      <div class="xcard rv"><h3>Керамзитобетон</h3><p>Лёгкий и тёплый: низкая теплопроводность, не впитывает воду, не плесневеет. Для стяжек, утепления перекрытий и малоэтажных стен.</p></div>
-      <div class="xcard rv d1"><h3>Сульфатостойкий бетон</h3><p>С модификаторами против солей серной кислоты. Для фундаментов в агрессивных грунтах и сооружений рядом с водой.</p></div>
-    </div>
   </div>
 </section>
 
@@ -753,11 +783,39 @@ footer .brand img{width:38px;height:38px}
         <figcaption><b>KASKELEN BETON</b>Фирменные миксеры на строительных объектах</figcaption>
       </figure>
       <figure class="ph rv d1">
-        <img class="brand-shot production-stock" src="https://images.pexels.com/photos/12032991/pexels-photo-12032991.jpeg?auto=compress&amp;dpr=1&amp;h=750&amp;w=1260" onerror="this.onerror=null;this.src='assets/production-fallback.webp'" alt="Бетонный производственный комплекс с автобетоносмесителем у загрузочного узла" loading="lazy" decoding="async">
-        <figcaption><b>Производство бетона</b>Загрузка смесей в автобетоносмесители <small class="photo-credit">Иллюстрация: Sergei Skrynnik / Pexels</small></figcaption>
+        <img class="brand-shot production-stock" src="assets/production-beton.webp" alt="Автобетоносмеситель Kaskelen Beton на загрузке у бетонного узла" loading="lazy" decoding="async">
+        <figcaption><b>Производство бетона</b>Загрузка смесей в автобетоносмесители</figcaption>
       </figure>
     </div>
     <a class="instagram-follow rv" href="https://www.instagram.com/kaskelen.beton_?vrfl=cGk0dDNsNW9oazB6" target="_blank" rel="noopener noreferrer" aria-label="Следите за нами в Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="6"/><circle cx="12" cy="12" r="4.2"/><circle cx="18" cy="6" r="1" fill="currentColor" stroke="none"/></svg>Следите за нами в Instagram <span aria-hidden="true">↗</span></a>
+  </div>
+</section>
+
+<!-- OBJECTS -->
+<section class="sec objects" id="objects">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="eyebrow rv">Наши объекты</div><h2 class="rv d1">Здесь уже лежит<br>наш бетон</h2></div>
+      <p class="rv d2">Примеры объектов, где использовался бетон Kaskelen Beton.</p>
+    </div>
+    <div class="objects-grid">
+      <article class="pcard object-card rv">
+        <figure class="ph object-photo"><img src="assets/object-event.webp" alt="Банкетный зал с празднично сервированными столами" loading="lazy" decoding="async"></figure>
+        <h3>Ресторан «Event»</h3>
+      </article>
+      <article class="pcard object-card rv d1">
+        <figure class="ph object-photo"><img src="assets/object-karasai-plaza.webp" alt="ЖК Карасай Плаза" loading="lazy" decoding="async"></figure>
+        <h3>ЖК «Карасай Плаза»</h3>
+      </article>
+      <article class="pcard object-card rv d2">
+        <figure class="ph object-photo"><img src="assets/object-zhondeu.webp" alt="Монолитные строительные работы" loading="lazy" decoding="async"></figure>
+        <h3 style="font-family:Manrope,system-ui,sans-serif">ТОО «Жөндеу Құрылыс»</h3>
+      </article>
+    </div>
+    <div class="objects-cta rv">
+      <div class="object-stat stat"><b>Более <span data-count="1000">0</span></b><span>довольных клиентов</span></div>
+      <a class="btn btn-wa" href="#" data-wa="Здравствуйте! Хочу обсудить свой объект и заказать бетон. Подскажите условия."><svg><use href="#wa"/></svg>Обсудить ваш объект</a>
+    </div>
   </div>
 </section>
 
@@ -794,23 +852,24 @@ footer .brand img{width:38px;height:38px}
       </div>
       <div class="rules">
         <div class="rule rv"><i>12</i><div><b>Миксеры 10–12 м³</b><span>Готовый бетон возим автобетоносмесителями.</span></div></div>
-        <div class="rule rv d1"><i>3+</i><div><b>Сухие смеси и сыпучка самосвалами</b><span>Самосвалы 3–20 м³, минимальный заказ 3 м³.</span></div></div>
+        <div class="rule rv d1"><i>ГОСТ</i><div><b>Документы и качество</b><span>Предоставляем паспорта качества и документы на каждую партию бетона.</span></div></div>
         <div class="rule rv d2"><i>1ч</i><div><b>Выгрузка 1 час</b><span>Для объёма от 10 м³. Дальше простой 2 500 ₸ за 30 минут.</span></div></div>
-        <div class="rule rv d3"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 18h16M6 18V9l6-4 6 4v9M10 18v-5h4v5"/></svg></i><div><b>Бетононасос по запросу</b><span>Если миксер не подъезжает близко, подберём насос или лоток.</span></div></div>
       </div>
     </div>
 
-    <div class="sec-head" style="margin:90px 0 30px">
-      <div><div class="eyebrow rv">Ещё возим</div><h2 class="rv d1" style="font-size:clamp(28px,3.6vw,44px)">Сыпучие материалы</h2></div>
-      <a class="btn btn-line rv" data-wa="Здравствуйте! Интересуют сыпучие материалы, подскажите цены." href="#">Цены в WhatsApp →</a>
-    </div>
-    <div class="mats">
-      <div class="mat rv"><div class="sw" style="background:radial-gradient(circle at 30% 30%,#e8d3a3,#c9a96b)"></div><b>Песок</b><span>мытый, речной</span></div>
-      <div class="mat rv d1"><div class="sw" style="background:radial-gradient(circle at 30% 30%,#b9bec6 0 18%,#8d949e 19% 34%,#c8ccd2 35% 52%,#7c838d 53%)"></div><b>Щебень</b><span>5×10, 5×20, 20×40</span></div>
-      <div class="mat rv d2"><div class="sw" style="background:radial-gradient(circle at 30% 30%,#c9b896,#9d8a66)"></div><b>ПГС</b><span>песчано-гравийная</span></div>
-      <div class="mat rv d3"><div class="sw" style="background:radial-gradient(circle at 30% 30%,#d6d4cf,#a9a59c)"></div><b>Отсев</b><span>дробления</span></div>
-      <div class="mat rv d1"><div class="sw" style="background:radial-gradient(circle at 30% 30%,#c58b5d 0 30%,#9b603a 31%)"></div><b>Керамзит</b><span>в мешках и навалом</span></div>
-      <div class="mat rv d2"><div class="sw" style="background:radial-gradient(circle at 30% 30%,#a7adb5,#6c737d)"></div><b>Гравий</b><span>для дренажа</span></div>
+    <div class="pump-section rv" id="pump">
+      <div class="sec-head">
+        <div><div class="eyebrow rv">Аренда техники</div><h2 class="rv d1">Бетононасос</h2></div>
+        <p class="rv d2">Подача бетона на высоту и в труднодоступные места.</p>
+      </div>
+      <div class="zones rv">
+        <div class="radar"></div>
+        <div class="zone"><div><h3>Стрела 37 м</h3><small>35 000 ₸/час</small></div><b>35 000 ₸/ч</b></div>
+        <div class="zone"><div><h3>Стрела 47 м</h3><small>40 000 ₸/час</small></div><b>40 000 ₸/ч</b></div>
+        <div class="zone"><div><h3>Стрела 52 м</h3><small>50 000 ₸/час</small></div><b>50 000 ₸/ч</b></div>
+        <a class="btn btn-wa" data-wa="Здравствуйте! Хочу заказать бетононасос. Длина стрелы: ... м. Время аренды: ... ч. Адрес объекта: ... . Подскажите свободное время и итоговую цену." href="#"><svg><use href="#wa"/></svg>Заказать насос</a>
+        <p class="pump-disclaimer">Задержка на объекте свыше 1 часа — 8 000 ₸. Стоимость указана по предварительным данным: пожалуйста, подтвердите почасовые тарифы и цену стрелы 52 м у менеджера.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -875,34 +934,37 @@ document.getElementById('yr').textContent=new Date().getFullYear();
 
 /* ---------- data ---------- */
 const G=[
- {g:'М100',b:'B7,5',mpa:9.8, use:'Подготовка, подбетонка, бордюры, лёгкие заборы.',p:[19000,20000,25500,17300]},
- {g:'М150',b:'B12,5',mpa:16.4,use:'Фундаменты бань, гаражей, беседок; дорожки, столбы.',p:[20000,21000,27000,18500]},
- {g:'М200',b:'B15',mpa:19.6,use:'Отмостки, лестницы, площадки, лёгкий фундамент.',p:[21000,22000,null,19800]},
- {g:'М250',b:'B20',mpa:26.2,use:'Ленточные и свайные фундаменты, перекрытия с арматурой.',p:[22000,23000,null,null]},
- {g:'М300',b:'B22,5',mpa:29.4,use:'Самая ходовая марка: любой фундамент частного дома.',p:[23000,24000,null,null]},
- {g:'М350',b:'B25',mpa:32.7,use:'Монолит, плиты перекрытия, бассейны, колонны.',p:[24000,25000,null,null]},
- {g:'М400',b:'B30',mpa:39.3,use:'Ответственные конструкции, мосты, гидросооружения.',p:[25000,26000,null,null]},
- {g:'М450',b:'B35',mpa:45.8,use:'Высокие нагрузки: опоры, ригели, промышленные полы.',p:[26000,27000,null,null]},
- {g:'М500',b:'B40',mpa:52.4,use:'Спецобъекты: дамбы, хранилища, мостовые конструкции.',p:[27000,28000,null,null]},
+ {g:'М100',b:'B7,5',mpa:9.8, use:'Подготовка, подбетонка, бордюры, лёгкие заборы.',p:[22000,24000]},
+ {g:'М150',b:'B12,5',mpa:16.4,use:'Фундаменты бань, гаражей, беседок; дорожки, столбы.',p:[23000,25500]},
+ {g:'М200',b:'B15',mpa:19.6,use:'Отмостки, лестницы, площадки, лёгкий фундамент.',p:[25000,27000]},
+ {g:'М250',b:'B20',mpa:26.2,use:'Ленточные и свайные фундаменты, перекрытия с арматурой.',p:[26500,28500]},
+ {g:'М300',b:'B22,5',mpa:29.4,use:'Самая ходовая марка: любой фундамент частного дома.',p:[28000,30000]},
+ {g:'М350',b:'B25',mpa:32.7,use:'Монолит, плиты перекрытия, бассейны, колонны.',p:[30000,32000]},
+ {g:'М400',b:'B30',mpa:39.3,use:'Ответственные конструкции, мосты, гидросооружения.',p:[32000,34000]},
+ {g:'М450',b:'B35',mpa:45.8,use:'Высокие нагрузки: опоры, ригели, промышленные полы.',p:[35000,37000]},
+ {g:'М500',b:'B40',mpa:52.4,use:'Спецобъекты: дамбы, хранилища, мостовые конструкции.',p:[38000,40000]},
 ];
-const FILLER=['щебень 5×20','щебень 5×10','керамзит','раствор'];
+const VAT_LABEL=['без НДС','с НДС'];
 const DEL=[3000,4000,5000];
 
-/* ---------- prices ---------- */
+/* ---------- prices & shared VAT mode ---------- */
 let f=0;
 function renderPrices(){
   const grid=document.getElementById('priceGrid');
-  grid.innerHTML=G.map((x,i)=>{
-    const p=x.p[f];
-    return `<div class="pcard ${p?'':'na'}"><div class="bar" style="width:0" data-w="${(x.mpa/52.4*100).toFixed(0)}%"></div>
+  grid.innerHTML=G.map(x=>`<div class="pcard"><div class="bar" style="width:0" data-w="${(x.mpa/52.4*100).toFixed(0)}%"></div>
       <div><span class="g">${x.g}</span><span class="cls">${x.b}</span></div>
       <p>${x.use}</p>
-      <div class="pr"><div><small>за 1 м³, ${FILLER[f]}</small><b>${p?'от '+fmt(p):'под заказ'}</b></div>
-      <a class="order" target="_blank" rel="noopener" href="${wa(`Здравствуйте! Хочу заказать бетон ${x.g} (${FILLER[f]}). Объём: ... м³, адрес: ...`)}" aria-label="Заказать ${x.g}"><svg><use href="#wa"/></svg></a></div></div>`}).join('');
+      <div class="pr"><div><small>Без НДС</small><b>${fmt(x.p[0])}</b><small>С НДС</small><b>${fmt(x.p[1])}</b></div>
+      <a class="order" target="_blank" rel="noopener" href="${wa(`Здравствуйте! Хочу заказать бетон ${x.g}. Подскажите цену без НДС и с НДС. Объём: ... м³, адрес: ...`)}" aria-label="Заказать ${x.g}"><svg><use href="#wa"/></svg></a></div></div>`).join('');
   requestAnimationFrame(()=>setTimeout(()=>grid.querySelectorAll('.bar').forEach(b=>b.style.width=b.dataset.w),60));
 }
-document.getElementById('tabs').addEventListener('click',e=>{const t=e.target.closest('.tab');if(!t)return;
-  document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x===t));f=+t.dataset.f;renderPrices()});
+function setVatMode(mode){
+  f=mode;
+  document.querySelectorAll('#calcVatTabs [data-vat]').forEach(t=>{const on=+t.dataset.vat===f;t.classList.toggle('on',on);t.setAttribute('aria-pressed',String(on));});
+  if(typeof calc==='function' && document.getElementById('v0'))calc();
+  if(typeof pickGrade==='function' && typeof selectedGrade!=='undefined' && document.getElementById('gdetail').children.length)pickGrade(selectedGrade);
+}
+document.getElementById('calcVatTabs').addEventListener('click',e=>{const t=e.target.closest('[data-vat]');if(t)setVatMode(+t.dataset.vat)});
 renderPrices();
 
 /* ---------- calculator ---------- */
@@ -937,14 +999,14 @@ function calc(){
   if(document.getElementById('reserve').checked)vol*=1.05;
   vol=Math.round(vol*10)/10;
   const gi=+gradeSel.value,z=+document.getElementById('zone').value;
-  const price=G[gi].p[0];
+  const price=G[gi].p[f];
   const beton=vol*price;
   const del=vol>0?Math.max(vol,10)*DEL[z]:0;
   tween(document.getElementById('vol'),vol,'m');
   tween(document.getElementById('cBeton'),beton);
   tween(document.getElementById('cDel'),del);
   tween(document.getElementById('cTotal'),beton+del);
-  document.getElementById('lnBeton').textContent=`Бетон ${G[gi].g} · ${vol.toString().replace('.',',')} м³ × ${fmt(price)}`;
+  document.getElementById('lnBeton').textContent=`Бетон ${G[gi].g} (${VAT_LABEL[f]}) · ${vol.toString().replace('.',',')} м³ × ${fmt(price)}`;
   document.getElementById('lnDel').textContent=`Доставка${z===2?' (от, уточняется)':''}${vol<10&&vol>0?' · как за 10 м³':''}`;
   const n=Math.ceil(vol/12);
   document.getElementById('trucks').textContent=vol>0?`${n} ${n%10===1&&n%100!==11?'миксер':(n%10>=2&&n%10<=4&&(n%100<10||n%100>=20))?'миксера':'миксеров'} по 12 м³`:'Введите размеры';
@@ -953,7 +1015,7 @@ function calc(){
   document.getElementById('fillTxt').textContent=vol>0?`${n>1?'последний ':''}миксер заполнен на ${Math.round(ratio*100)}%`:'заполнение миксера 12 м³';
   const names={strip:'ленточный фундамент',slab:'плита',pile:'сваи',floor:'стяжка'};
   const zn=document.getElementById('zone').selectedOptions[0].text;
-  document.getElementById('sendCalc').href=wa(`Здравствуйте! Расчёт с сайта:\nКонструкция: ${names[shape]}\nОбъём: ${vol} м³\nМарка: ${G[gi].g}\nКуда: ${zn}\nПримерно: ${fmt(beton+del)}\nПодскажите точную цену и время доставки.`);
+  document.getElementById('sendCalc').href=wa(`Здравствуйте! Расчёт с сайта:\nКонструкция: ${names[shape]}\nОбъём: ${vol} м³\nМарка: ${G[gi].g} (${VAT_LABEL[f]})\nКуда: ${zn}\nБетон ${VAT_LABEL[f]}: ${fmt(beton)}\nДоставка: ${fmt(del)}\nПримерно: ${fmt(beton+del)}\nПодскажите точную цену и время доставки.`);
   document.getElementById('sendCalc').target='_blank';
 }
 renderFields();
@@ -963,12 +1025,14 @@ const PURP=[['Дорожки и отмостка',[1,2]],['Забор и сто�
 const sc=document.getElementById('scale'),pu=document.getElementById('purpose');
 sc.innerHTML=G.map((x,i)=>`<div class="col" data-i="${i}" style="height:${(22+x.mpa/52.4*78).toFixed(0)}%"><span>${x.g}</span></div>`).join('');
 pu.innerHTML=PURP.map((p,i)=>`<button class="chip" data-p="${i}">${p[0]}</button>`).join('');
+let selectedGrade=4;
 function pickGrade(i){
+  selectedGrade=i;
   sc.querySelectorAll('.col').forEach(c=>c.classList.toggle('on',+c.dataset.i===i));
   const x=G[i];
   document.getElementById('gdetail').innerHTML=`<div class="big">${x.g}</div><div><h3>Класс ${x.b}</h3><p>${x.use}</p>
-   <div class="meta"><div><span style="color:var(--muted)">Прочность</span><b>${x.mpa.toString().replace('.',',')} МПа</b></div><div><span style="color:var(--muted)">Цена (5×20)</span><b>от ${fmt(x.p[0])}</b></div></div></div>
-   <a class="btn btn-wa" target="_blank" rel="noopener" href="${wa('Здравствуйте! Хочу заказать бетон '+x.g+'. Объём: ... м³')}"><svg><use href="#wa"/></svg>Заказать ${x.g}</a>`;
+   <div class="meta"><div><span style="color:var(--muted)">Прочность</span><b>${x.mpa.toString().replace('.',',')} МПа</b></div><div><span style="color:var(--muted)">Цена без НДС</span><b>${fmt(x.p[0])}</b></div><div><span style="color:var(--muted)">Цена с НДС</span><b>${fmt(x.p[1])}</b></div></div></div>
+   <a class="btn btn-wa" target="_blank" rel="noopener" href="${wa('Здравствуйте! Хочу заказать бетон '+x.g+'. Подскажите цену без НДС и с НДС. Объём: ... м³')}"><svg><use href="#wa"/></svg>Заказать ${x.g}</a>`;
 }
 sc.addEventListener('click',e=>{const c=e.target.closest('.col');if(c)pickGrade(+c.dataset.i)});
 pu.addEventListener('click',e=>{const b=e.target.closest('.chip');if(!b)return;
@@ -982,9 +1046,9 @@ pickGrade(4);
 const FAQ=[
  ['Какой бетон нужен для фундамента частного дома?','Для ленточного или плитного фундамента берите М300 (B22,5): это самая популярная марка для частного строительства. Для лёгких построек вроде бани или гаража хватит М200–М250.'],
  ['Можно ли заливать бетон зимой?','Да. Зимой добавляем противоморозные добавки, а уложенный бетон нужно укрыть и прогревать. Скажите менеджеру, что заливка зимняя, и мы подберём состав.'],
- ['Какой минимальный заказ?','Готовый бетон возим миксером, доставка оплачивается минимум как за 10 м³. Сухие смеси и сыпучие материалы от 3 м³ самосвалом.'],
+ ['Какой минимальный заказ?','Готовый бетон возим миксером, доставка оплачивается минимум как за 10 м³. По объёму и технике для вашего объекта лучше сразу уточнить у менеджера.'],
  ['Сколько времени даётся на выгрузку?','При объёме от 10 м³ на выгрузку есть 1 час. Дальше простой стоит 2 500 ₸ за каждые 30 минут, поэтому подготовьте опалубку и подъезд заранее.'],
- ['Работаете с юрлицами?','Да. Выставляем счёт, оплата безналом, даём полный пакет документов и паспорта качества на бетон.'],
+ ['Работаете с юрлицами?','Да. На сайте сразу указаны цены без НДС и с НДС. Для юридических лиц выставляем счёт и предоставляем документы и паспорта качества на бетон.'],
  ['Как быстро привезёте?','Обычно в день заявки или на следующий день, в зависимости от загрузки. Напишите в WhatsApp адрес и объём, и сразу скажем точное время.'],
 ];
 document.getElementById('faqList').innerHTML=FAQ.map(q=>`<div class="q rv"><button><span>${q[0]}</span><i></i></button><div class="a"><div><p>${q[1]}</p></div></div></div>`).join('');
